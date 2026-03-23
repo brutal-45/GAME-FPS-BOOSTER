@@ -803,7 +803,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 ╔═══════════════════════════════════════════════════════════════════════╗
 ║                                                                       ║
-║                  🎮 MADE WITH ❤️ BY GAMERS, FOR GAMERS 🎮             ║
+║        🎮 MADE WITH BRUTALTOOLS BY GAMERS, FOR GAMERS 🎮             ║
 ║                                                                       ║
 ╚═══════════════════════════════════════════════════════════════════════╝
 ```
