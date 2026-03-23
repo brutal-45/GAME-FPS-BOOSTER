@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.brutal-tools.brutal-fps",
+  "productName": "BRUTAL-FPS",
+  "copyright": "Copyright © 2024 Brutal Tools",
+  
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  
+  "files": [
+    "dist-electron/**/*",
+    "package.json"
+  ],
+  
+  "extraResources": [
+    {
+      "from": "public/brutal-fps-standalone.html",
+      "to": "app/index.html",
+      "filter": ["**/*"]
+    },
+    {
+      "from": "build",
+      "to": "assets",
+      "filter": ["icon.*"]
+    }
+  ],
+  
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icon.ico",
+    "artifactName": "${productName}-Setup-${version}.${ext}"
+  },
+  
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "BRUTAL-FPS",
+    "installerIcon": "build/icon.ico",
+    "uninstallerIcon": "build/icon.ico",
+    "installerHeaderIcon": "build/icon.ico"
+  },
+  
+  "portable": {
+    "artifactName": "${productName}-Portable-${version}.exe"
+  },
+  
+  "mac": {
+    "target": "dmg",
+    "icon": "build/icon.icns",
+    "category": "public.app-category.games"
+  },
+  
+  "linux": {
+    "target": "AppImage",
+    "icon": "build/icon.png",
+    "category": "Game"
+  },
+  
+  "publish": null
+}

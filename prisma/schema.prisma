@@ -1,0 +1,150 @@
+// BRUTAL-FPS Database Schema
+// The Ultimate Gaming Performance Booster
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// User settings and preferences
+model Settings {
+  id                String   @id @default(cuid())
+  theme             String   @default("dark-brutality")
+  boostMode         String   @default("balanced")
+  autoBoost         Boolean  @default(true)
+  showOverlay       Boolean  @default(true)
+  overlayPosition   String   @default("top-right")
+  overlayOpacity    Int      @default(80)
+  notifications     Boolean  @default(true)
+  soundEffects      Boolean  @default(true)
+  autoRestore       Boolean  @default(true)
+  createRestorePoint Boolean @default(true)
+  language          String   @default("en")
+  updatedAt         DateTime @updatedAt
+}
+
+// Game profiles with optimization settings
+model GameProfile {
+  id              String   @id @default(cuid())
+  name            String
+  executablePath  String?
+  icon            String?
+  category        String   @default("other")
+  boostMode       String   @default("performance")
+  customSettings  String?  // JSON string for custom settings
+  timesPlayed     Int      @default(0)
+  lastPlayed      DateTime?
+  avgFpsBefore    Float?
+  avgFpsAfter     Float?
+  isFavorite      Boolean  @default(false)
+  isEmulator      Boolean  @default(false)
+  emulatorType    String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  sessions        OptimizationSession[]
+}
+
+// Optimization session records
+model OptimizationSession {
+  id              String   @id @default(cuid())
+  gameProfileId   String?
+  gameName        String
+  boostMode       String
+  fpsBefore       Int
+  fpsAfter        Int
+  cpuUsageBefore  Float
+  cpuUsageAfter   Float
+  ramUsageBefore  Float
+  ramUsageAfter   Float
+  gpuUsageBefore  Float?
+  gpuUsageAfter   Float?
+  temperature     Float?
+  duration        Int      // in seconds
+  processesKilled Int      @default(0)
+  tweaksApplied   Int      @default(0)
+  createdAt       DateTime @default(now())
+  gameProfile     GameProfile? @relation(fields: [gameProfileId], references: [id])
+}
+
+// Achievement system
+model Achievement {
+  id              String   @id @default(cuid())
+  key             String   @unique
+  name            String
+  description     String
+  icon            String
+  category        String   @default("general")
+  requirement     Int      @default(1)
+  xpReward        Int      @default(100)
+  isUnlocked      Boolean  @default(false)
+  unlockedAt      DateTime?
+  progress        Int      @default(0)
+}
+
+// User statistics and gamification
+model UserStats {
+  id                  String   @id @default(cuid())
+  totalBoosts         Int      @default(0)
+  totalFpsGained      Int      @default(0)
+  totalProcessesKilled Int     @default(0)
+  totalRamFreed       Float    @default(0)
+  totalSessionTime    Int      @default(0) // in minutes
+  currentStreak       Int      @default(0)
+  longestStreak       Int      @default(0)
+  lastBoostDate       DateTime?
+  level               Int      @default(1)
+  xp                  Int      @default(0)
+  totalXp             Int      @default(0)
+  updatedAt           DateTime @updatedAt
+}
+
+// System tweak records
+model SystemTweak {
+  id              String   @id @default(cuid())
+  key             String   @unique
+  name            String
+  description     String
+  category        String
+  riskLevel       String   @default("safe") // safe, moderate, aggressive
+  isApplied       Boolean  @default(false)
+  appliedAt       DateTime?
+  originalValue   String?
+  currentValue    String?
+  isAntiCheatSafe Boolean  @default(true)
+  affectedGames   String?  // JSON array of game IDs where this tweak helps
+}
+
+// Active monitoring data (real-time stats)
+model MonitoringData {
+  id              String   @id @default(cuid())
+  timestamp       DateTime @default(now())
+  cpuUsage        Float
+  ramUsage        Float
+  gpuUsage        Float?
+  fps             Int?
+  temperature     Float?
+  networkLatency  Int?
+  processes       Int
+  isGaming        Boolean  @default(false)
+  activeGame      String?
+}
+
+// Emulator configurations
+model EmulatorConfig {
+  id              String   @id @default(cuid())
+  name            String   @unique
+  type            String   // bluestacks, ldplayer, nox, etc.
+  detectionPath   String?
+  ramAllocation   Int      @default(4096) // MB
+  cpuCores        Int      @default(4)
+  renderMode      String   @default("opengl")
+  dpi            Int      @default(320)
+  resolution     String   @default("1920x1080")
+  customFlags    String?
+  isEnabled      Boolean  @default(true)
+  lastOptimized  DateTime?
+}

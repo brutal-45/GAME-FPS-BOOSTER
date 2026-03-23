@@ -1,0 +1,28 @@
+{
+  "name": "BRUTAL-FPS",
+  "short_name": "BRUTAL-FPS",
+  "description": "Ultimate Gaming Performance Booster - Boost FPS by 30-60% with one click!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff0000",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/brutal-fps-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "utilities", "productivity"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Quick Boost",
+      "short_name": "Boost",
+      "description": "Instantly boost your gaming performance",
+      "url": "/?action=boost"
+    }
+  ]
+}
