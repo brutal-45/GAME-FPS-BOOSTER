@@ -38,7 +38,7 @@ const platforms = [
     name: "Browser App",
     subtitle: "Any Operating System",
     icon: Globe,
-    description: "Run instantly in any browser without installation",
+    description: "Run instantly in any browser without installation AS A NATIVE APP BUT FOR ONLY PREVIEW",
     downloadSize: "15 KB",
     recommended: false,
     gradient: "from-violet-600 via-purple-500 to-fuchsia-400",
