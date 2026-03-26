@@ -447,7 +447,7 @@ Double-click: start.bat
 ```
 This automatically:
 - ✅ Starts the application
-- ✅ Opens your browser to http://localhost:3000
+- ✅ Opens your browser to https://game-fps-booster.vercel.app/
 
 **Command Line:**
 ```bash
@@ -600,28 +600,28 @@ brutal-fps/
 │                              ⬇️                                        │
 │                                                                         │
 │  ┌─────────────────────────────────────────────────────────────────┐   │
-│  │  🔪 1️⃣ PROCESS CLEANUP                                          │   │
-│  │     • Kill Chrome, Discord, Spotify, OneDrive...               │   │
+│  │  🔪 1️⃣ PROCESS CLEANUP                                         │   │
+│  │     • Kill Chrome, Discord, Spotify, OneDrive...                │   │
 │  │     • Free up to 4GB RAM                                        │   │
 │  │     • Reduce background CPU usage by 40%+                       │   │
 │  └─────────────────────────────────────────────────────────────────┘   │
 │                              ⬇️                                        │
 │  ┌─────────────────────────────────────────────────────────────────┐   │
-│  │  ⚡ 2️⃣ CPU OPTIMIZATION                                          │   │
+│  │  ⚡ 2️⃣ CPU OPTIMIZATION                                        │   │
 │  │     • Disable CPU throttling                                    │   │
 │  │     • Pin game to dedicated cores                               │   │
 │  │     • Set high priority for game process                        │   │
 │  └─────────────────────────────────────────────────────────────────┘   │
 │                              ⬇️                                        │
 │  ┌─────────────────────────────────────────────────────────────────┐   │
-│  │  🔥 3️⃣ GPU OPTIMIZATION                                          │   │
+│  │  🔥 3️⃣ GPU OPTIMIZATION                                        │   │
 │  │     • Enable maximum performance mode                           │   │
 │  │     • Optimize VRAM allocation                                  │   │
 │  │     • Hardware GPU scheduling                                   │   │
 │  └─────────────────────────────────────────────────────────────────┘   │
 │                              ⬇️                                        │
 │  ┌─────────────────────────────────────────────────────────────────┐   │
-│  │  🌐 4️⃣ NETWORK OPTIMIZATION                                      │   │
+│  │  🌐 4️⃣ NETWORK OPTIMIZATION                                    │   │
 │  │     • Disable Nagle's algorithm (lower latency)                 │   │
 │  │     • Optimize TCP window                                       │   │
 │  │     • Prioritize gaming traffic                                 │   │
