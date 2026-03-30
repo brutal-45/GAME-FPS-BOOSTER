@@ -1,5 +1,5 @@
 @echo off
-title BRUTAL-FPS
+title BRUTAL-FPS 
 color 0C
 cd /d "%~dp0"
 
