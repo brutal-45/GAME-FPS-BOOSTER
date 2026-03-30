@@ -1,6 +1,6 @@
 ; ═══════════════════════════════════════════════════════════════════════════
 ; BRUTAL-FPS - Professional Windows Installer Script
-; Ultimate Gaming Performance Booster
+; Ultimate Gaming Performance Booster 
 ; ═══════════════════════════════════════════════════════════════════════════
 
 [Setup]
