@@ -12,7 +12,7 @@ AppPublisherURL=https://brutal-tools.com
 AppSupportURL=https://brutal-tools.com/support
 AppUpdatesURL=https://brutal-tools.com/updates
 DefaultAppName=BRUTAL-FPS
-AppCopyright=Copyright © 2024 Brutal Tools
+AppCopyright=Copyright © 2024 Brutal Tools 
 AppComments=Ultimate Gaming Performance Booster - Boost FPS by 30-60%
 
 ; Installation Paths
