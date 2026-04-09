@@ -1,5 +1,5 @@
 // BRUTAL-FPS Database Schema
-// The Ultimate Gaming Performance Booster
+// The Ultimate Gaming Performance Booster 
 
 generator client {
   provider = "prisma-client-js"
