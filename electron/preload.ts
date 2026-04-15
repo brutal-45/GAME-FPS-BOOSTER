@@ -8,7 +8,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   
   // Notifications
   showNotification: (title: string, body: string) => 
-    ipcRenderer.invoke('show-notification', title, body),
+    ipcRenderer.invoke('show-notification', title, body), 
   
   // Window controls
   minimizeToTray: () => ipcRenderer.invoke('minimize-to-tray'),
