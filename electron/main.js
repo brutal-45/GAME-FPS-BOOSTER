@@ -2,7 +2,7 @@ const { app, BrowserWindow, Tray, Menu, shell } = require('electron');
 const path = require('path');
 
 let mainWindow = null;
-let tray = null;
+let tray = null; 
 let isQuitting = false;
 
 // App icon path
