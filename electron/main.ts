@@ -4,7 +4,7 @@ import * as path from 'path';
 let mainWindow: BrowserWindow | null = null;
 let tray: Tray | null = null;
 let isQuitting = false;
-
+ 
 // App icon path
 function getIconPath(): string {
   if (app.isPackaged) {
