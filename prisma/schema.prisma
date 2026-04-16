@@ -95,7 +95,7 @@ model UserStats {
   totalSessionTime    Int      @default(0) // in minutes
   currentStreak       Int      @default(0)
   longestStreak       Int      @default(0)
-  lastBoostDate       DateTime?
+  lastBoostDate       DateTime? 
   level               Int      @default(1)
   xp                  Int      @default(0)
   totalXp             Int      @default(0)
