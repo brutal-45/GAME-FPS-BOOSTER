@@ -9,7 +9,7 @@
 ║                                                                  ║
 ║              ULTIMATE GAMING PERFORMANCE BOOSTER                 ║
 ║                       Version 1.0.0                              ║
-║                                                                  ║
+║                                                                  ║ 
 ╚══════════════════════════════════════════════════════════════════╝
 
                     DEVELOPED UNDER BRUTAL TOOLS
