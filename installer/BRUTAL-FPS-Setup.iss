@@ -4,7 +4,7 @@
 ; ═══════════════════════════════════════════════════════════════════════════
 
 [Setup]
-; App Information
+; App Information 
 AppName=BRUTAL-FPS
 AppVersion=1.0.0
 AppPublisher=Brutal Tools
