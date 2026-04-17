@@ -7,7 +7,7 @@
 ╚══════════════════════════════════════════════════════════════════╝
 
 GETTING STARTED:
-
+ 
 1. Launch BRUTAL-FPS
    • Double-click the desktop shortcut, OR 
    • Open from Start Menu → BRUTAL-FPS
