@@ -3,7 +3,7 @@ title BRUTAL-FPS
 color 0C
 cd /d "%~dp0"
 
-:: Check if running from installed location
+:: Check if running from installed location 
 if exist "start.bat" (
     cd /d "%~dp0"
 )
