@@ -32,7 +32,7 @@
   ```
   
   ### **⚡ THE ULTIMATE GAMING PERFORMANCE BOOSTER ⚡**
-  
+   
   > *Unleash Every Frame. No Mercy. No Limits.*
   
   <!-- Animated badges -->
