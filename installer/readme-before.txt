@@ -15,7 +15,7 @@
                     DEVELOPED UNDER BRUTAL TOOLS
 
 Thank you for choosing BRUTAL-FPS!
-
+ 
 WHAT'S INCLUDED:
   • One-click FPS boost functionality
   • Real-time performance monitoring
