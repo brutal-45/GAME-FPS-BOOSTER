@@ -8,7 +8,7 @@ import {
   Users, MapPin, TrendingUp, Terminal, FileCode, Sparkles,
   Windows, BadgeCheck, Rocket, Target, FireIcon
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
