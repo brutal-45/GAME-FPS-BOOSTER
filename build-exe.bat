@@ -15,7 +15,7 @@ where bun >nul 2>nul
 if %errorlevel% equ 0 (
     echo  [✓] Bun detected
     set RUNNER=bun
-    goto :build
+    goto :build 
 )
 
 where node >nul 2>nul
