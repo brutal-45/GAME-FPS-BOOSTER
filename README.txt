@@ -28,7 +28,7 @@ REQUIREMENTS:
 
 Minimum:
   • Windows 7 SP1 (32/64-bit)
-  • 1 GB RAM
+  • 2 GB RAM
   • 30 MB disk space
 
 Recommended:
