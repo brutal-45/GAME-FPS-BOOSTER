@@ -52,7 +52,7 @@ if %errorlevel% equ 0 (
     npm run dev
     goto :end
 )
-
+ 
 :: Neither found
 echo.
 echo   [ERROR] Neither Bun nor npm is installed!
