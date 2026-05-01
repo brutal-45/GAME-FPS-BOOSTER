@@ -18,7 +18,7 @@ Write-Host "  ║     ╚═╝  ╚═╝ ╚═════╝ ╚════
 Write-Host "  ║                                                                  ║" -ForegroundColor Red
 Write-Host "  ║              ULTIMATE GAMING PERFORMANCE BOOSTER                 ║" -ForegroundColor Red
 Write-Host "  ║                                                                  ║" -ForegroundColor Red
-Write-Host "  ╚══════════════════════════════════════════════════════════════════╝" -ForegroundColor Red
+Write-Host "  ╚══════════════════════════════════════════════════════════════════╝" -ForegroundColor Red 
 Write-Host ""
 Write-Host "                   Developed under BRUTAL TOOLS" -ForegroundColor Yellow
 Write-Host ""
