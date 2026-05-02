@@ -5,8 +5,8 @@ cls
 
 echo.
 echo  ╔══════════════════════════════════════════════════════════════════╗
-echo  ║              BRUTAL-FPS EXECUTABLE BUILDER                        ║
-echo  ║                  Build .EXE for Windows                           ║
+echo  ║              BRUTAL-FPS EXECUTABLE BUILDER                       ║
+echo  ║                  Build .EXE for Windows                          ║
 echo  ╚══════════════════════════════════════════════════════════════════╝
 echo.
 
