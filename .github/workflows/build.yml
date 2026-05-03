@@ -6,7 +6,7 @@ on:
       - 'v*'
   workflow_dispatch:
     inputs:
-      version:
+      version: 
         description: 'Version to build (e.g., 1.0.0)'
         required: false
         default: '1.0.0'
