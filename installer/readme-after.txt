@@ -9,7 +9,7 @@
 GETTING STARTED:
  
 1. Launch BRUTAL-FPS
-   • Double-click the desktop shortcut, OR 
+   • Double-click the desktop shortcut, OR  
    • Open from Start Menu → BRUTAL-FPS 
 
 2. The application will open in your browser
