@@ -10,7 +10,7 @@ HOW TO RUN:
 Option 1 - Double-click start.bat
 Option 2 - Run in terminal: bun run dev
 
-Then open: http://localhost:3000
+Then open in your localhost : http://localhost:3000
 
 FEATURES:
 ────────────────────────────────────────────────────────────────────────
@@ -27,7 +27,7 @@ REQUIREMENTS:
 ────────────────────────────────────────────────────────────────────────
 
 Minimum:
-  • Windows 7 SP1 (32/64-bit)
+  • Windows 7 SP1 (32/64-bit) 
   • 2 GB RAM
   • 30 MB disk space
 
