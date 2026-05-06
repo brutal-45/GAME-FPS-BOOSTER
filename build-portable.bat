@@ -5,7 +5,7 @@ cls
 
 echo.
 echo   ╔══════════════════════════════════════════════════════════════════╗
-echo   ║              BRUTAL-FPS BUILD SCRIPT                              ║
+echo   ║              BRUTAL-FPS BUILD SCRIPT                             ║
 echo   ╚══════════════════════════════════════════════════════════════════╝
 echo.
 
@@ -34,7 +34,7 @@ if not exist "portable" mkdir "portable"
 :: Copy files
 xcopy /E /I /Y ".next\standalone\*" "portable\"
 xcopy /E /I /Y ".next\static" "portable\.next\static\"
-xcopy /E /I /Y "public" "portable\public\"
+xcopy /E /I /Y "public" "portable\public\"  
 
 :: Copy scripts
 copy /Y "start.bat" "portable\"
