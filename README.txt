@@ -1,7 +1,7 @@
-                BRUTAL-FPS - Ultimate Gaming Performance Booster
+                 BRUTAL-FPS - Ultimate Gaming Performance Booster
                 ══════════════════════════════════════════════════
-                            Version 1.0.0
-                    Developed under Brutal Tools
+                                  Version 1.0.0
+                           Developed under Brutal Tools
                 ══════════════════════════════════════════════════
  
 HOW TO RUN:
