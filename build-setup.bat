@@ -6,7 +6,7 @@ cls
 echo.
 echo   ╔══════════════════════════════════════════════════════════════════╗
 echo   ║              BRUTAL-FPS SETUP BUILDER                            ║
-echo   ║           Create Windows Installer (.exe)                         ║
+echo   ║           Create Windows Installer (.exe)                        ║
 echo   ╚══════════════════════════════════════════════════════════════════╝
 echo.
 
@@ -37,7 +37,7 @@ if %errorlevel% neq 0 (
     pause
     exit /b 1
 )
-
+  
 echo.
 echo   [Step 2/4] Building Next.js application...
 bun run build
