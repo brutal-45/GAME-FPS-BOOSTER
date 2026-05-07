@@ -6,7 +6,7 @@
 [Setup]
 ; App Information  
 AppName=BRUTAL-FPS
-AppVersion=1.0.0
+AppVersion=1.0.0  
 AppPublisher=Brutal Tools
 AppPublisherURL=https://brutal-tools.com
 AppSupportURL=https://brutal-tools.com/support
