@@ -5,7 +5,7 @@ cls
 
 echo.
 echo   ╔══════════════════════════════════════════════════════════════════╗
-echo   ║              BRUTAL-FPS FIRST TIME SETUP                          ║
+echo   ║              BRUTAL-FPS FIRST TIME SETUP                         ║
 echo   ╚══════════════════════════════════════════════════════════════════╝
 echo.
 
