@@ -23,7 +23,7 @@ if %errorlevel% equ 0 (
     echo  [✓] Node.js detected
     set RUNNER=npm
     goto :build
-)
+) 
 
 echo  [ERROR] Neither Bun nor Node.js is installed!
 echo  Please install from: https://bun.sh or https://nodejs.org
@@ -45,7 +45,7 @@ echo  [*] Building Windows executable...
 
 echo.
 echo  ╔══════════════════════════════════════════════════════════════════╗
-echo  ║                    BUILD COMPLETE!                                ║
+echo  ║                    BUILD COMPLETE!                               ║
 echo  ╚══════════════════════════════════════════════════════════════════╝
 echo.
 echo  Your executable is ready in the 'release' folder:
