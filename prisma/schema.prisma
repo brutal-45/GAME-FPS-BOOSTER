@@ -61,7 +61,7 @@ model OptimizationSession {
   ramUsageBefore  Float
   ramUsageAfter   Float
   gpuUsageBefore  Float?
-  gpuUsageAfter   Float?
+  gpuUsageAfter   Float? 
   temperature     Float?
   duration        Int      // in seconds
   processesKilled Int      @default(0)
