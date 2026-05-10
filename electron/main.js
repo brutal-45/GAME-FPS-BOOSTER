@@ -4,7 +4,7 @@ const path = require('path');
 let mainWindow = null;
 let tray = null; 
 let isQuitting = false;
-
+ 
 // App icon path
 function getIconPath() {
   if (app.isPackaged) {
