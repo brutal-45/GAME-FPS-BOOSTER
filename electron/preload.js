@@ -15,7 +15,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   showNotification: (title, body) => 
     new Notification(title, { body }).show(),
   
-  // Events
+  // Events 
   onQuickBoost: (callback) => {
     ipcRenderer.on('quick-boost', callback);
   }
