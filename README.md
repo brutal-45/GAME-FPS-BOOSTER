@@ -65,7 +65,7 @@
   
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                     ⚔️ DESTROY LAG. DOMINATE GAMES. ⚔️
+           ⚔️ DESTROY LAG. DOMINATE GAMES. ⚔️
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
@@ -133,9 +133,9 @@
 ### 🌍 **WORKS ON ANY PC**
 ```
 ┌────────────────────────────────┐
-│  🖥️ Windows 7 to Windows 11   │
+│  🖥️ Windows 7 to Windows 11    │
 │  💾 2GB RAM Minimum            │
-│  ⚙️ Intel Celeron to Ryzen 9  │
+│  ⚙️ Intel Celeron to Ryzen 9   │
 │  🎮 EVERYONE CAN GAME          │
 └────────────────────────────────┘
 ```
@@ -222,29 +222,29 @@
 ```
 ╔═══════════════════════════════════════════════════════════════════════╗
 ║                                                                       ║
-║     ██████╗ ██████╗  ██████╗ ██████╗  ██████╗ ███████╗██████╗        ║
-║     ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔═══██╗██╔════╝██╔══██╗       ║
-║     ██████╔╝██████╔╝██║   ██║██████╔╝██║   ██║█████╗  ██████╔╝       ║
-║     ██╔══██╗██╔══██╗██║   ██║██╔══██╗██║   ██║██╔══╝  ██╔══██╗       ║
-║     ██████╔╝██║  ██║╚██████╔╝██║  ██║╚██████╔╝███████╗██║  ██║       ║
-║     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝       ║
+║     ██████╗ ██████╗  ██████╗ ██████╗  ██████╗ ███████╗██████╗         ║
+║     ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔═══██╗██╔════╝██╔══██╗        ║
+║     ██████╔╝██████╔╝██║   ██║██████╔╝██║   ██║█████╗  ██████╔╝        ║
+║     ██╔══██╗██╔══██╗██║   ██║██╔══██╗██║   ██║██╔══╝  ██╔══██╗        ║
+║     ██████╔╝██║  ██║╚██████╔╝██║  ██║╚██████╔╝███████╗██║  ██║        ║
+║     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝        ║
 ║                                                                       ║
 ╠═══════════════════════════════════════════════════════════════════════╣
 ║                                                                       ║
-║   ┌─ FPS MONITOR ──────────────────────────────────────────────┐     ║
+║   ┌─ FPS MONITOR ──────────────────────────────────────────────┐      ║
 ║   │                                                             │     ║
 ║   │   🎮 CURRENT: 144 FPS    📊 AVG: 138    📉 MIN: 112       │     ║
 ║   │                                                             │     ║
-║   │   ████████████████████████░░░░░░  STABILITY: 94%           │     ║
+║   │   ████████████████████████░░░░░░  STABILITY: 94%            │     ║
 ║   │                                                             │     ║
 ║   └─────────────────────────────────────────────────────────────┘     ║
 ║                                                                       ║
-║   ┌─ SYSTEM STATS ─────────────────────────────────────────────┐     ║
-║   │                                                             │     ║
-║   │   💻 CPU: 45% @ 4.2GHz    🎮 GPU: 62% @ 1900MHz           │     ║
-║   │   🧠 RAM: 4.2/16GB        🌡️ TEMP: 65°C                   │     ║
-║   │   🌐 PING: 12ms           📶 NET: 150 Mbps                 │     ║
-║   │                                                             │     ║
+║   ┌─ SYSTEM STATS ─────────────────────────────────────────────┐      ║
+║   │                                                            │      ║
+║   │   💻 CPU: 45% @ 4.2GHz    🎮 GPU: 62% @ 1900MHz           │      ║
+║   │   🧠 RAM: 4.2/16GB        🌡️ TEMP: 65°C                   │      ║
+║   │   🌐 PING: 12ms           📶 NET: 150 Mbps                │      ║
+║   │                                                            │      ║
 ║   └─────────────────────────────────────────────────────────────┘     ║
 ║                                                                       ║
 ╚═══════════════════════════════════════════════════════════════════════╝
@@ -261,13 +261,13 @@
 │  🔪 PROCESS TERMINATOR - Kill Resource Hogs Instantly             │
 ├────────────────────────────────────────────────────────────────────┤
 │                                                                    │
-│  📋 View ALL running processes with memory & CPU usage            │
-│  💀 Kill resource-heavy apps with ONE CLICK                       │
-│  🧹 "Kill All Bloatware" feature for instant cleanup              │
-│  🛡️ Protects essential system processes                           │
+│  📋 View ALL running processes with memory & CPU usage             │
+│  💀 Kill resource-heavy apps with ONE CLICK                        │
+│  🧹 "Kill All Bloatware" feature for instant cleanup               │
+│  🛡️ Protects essential system processes                            │ 
 │                                                                    │
 ├────────────────────────────────────────────────────────────────────┤
-│  ⚡ ONE-CLICK CLEANUP: Save up to 4GB RAM instantly!              │
+│  ⚡ ONE-CLICK CLEANUP: Save up to 4GB RAM instantly!               │
 └────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -296,15 +296,15 @@
 ┌─────────────────────────────────────────────────────────────────────┐
 │                                                                     │
 │  🎯 FPS GAMES              ⚔️ BATTLE ROYALE          🌍 RPG        │
-│  ├─ Counter-Strike 2      ├─ PUBG                   ├─ Genshin    │
-│  ├─ Valorant              ├─ Fortnite               ├─ Cyberpunk  │
-│  ├─ Apex Legends          ├─ Call of Duty           ├─ Elden Ring │
-│  └─ Overwatch 2           └─ Apex Legends           └─ Witcher 3  │
-│                                                                     │
-│  🏎️ RACING                ⚽ SPORTS                 🎲 OTHER      │
-│  ├─ Forza Horizon         ├─ FIFA                   ├─ Minecraft │
-│  ├─ Assetto Corsa         ├─ NBA 2K                 ├─ Roblox     │
-│  └─ Need for Speed        └─ Rocket League          └─ Many More! │
+│  ├─ Counter-Strike 2      ├─ PUBG                   ├─ Genshin       │
+│  ├─ Valorant              ├─ Fortnite               ├─ Cyberpunk     │
+│  ├─ Apex Legends          ├─ Call of Duty           ├─ Elden Ring    │
+│  └─ Overwatch 2           └─ Apex Legends           └─ Witcher 3     │
+│                                                                      │
+│  🏎️ RACING                ⚽ SPORTS                 🎲 OTHER        │
+│  ├─ Forza Horizon         ├─ FIFA                   ├─ Minecraft     │
+│  ├─ Assetto Corsa         ├─ NBA 2K                 ├─ Roblox        │
+│  └─ Need for Speed        └─ Rocket League          └─ Many More!    │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
 ```
