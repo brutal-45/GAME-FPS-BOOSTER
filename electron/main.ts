@@ -1,5 +1,5 @@
 import { app, BrowserWindow, Tray, Menu, nativeImage, shell, Notification } from 'electron';
-import * as path from 'path';
+import * as path from 'path'; 
 
 let mainWindow: BrowserWindow | null = null;
 let tray: Tray | null = null;
