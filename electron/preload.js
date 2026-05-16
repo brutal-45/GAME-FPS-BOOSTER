@@ -1,5 +1,5 @@
 const { contextBridge, ipcRenderer } = require('electron');
-
+ 
 // Expose protected methods
 contextBridge.exposeInMainWorld('electronAPI', {
   // Platform info
