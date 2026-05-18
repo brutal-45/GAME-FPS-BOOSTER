@@ -9,12 +9,12 @@ Clear-Host
 Write-Host ""
 Write-Host "  ╔══════════════════════════════════════════════════════════════════╗" -ForegroundColor Red
 Write-Host "  ║                                                                  ║" -ForegroundColor Red
-Write-Host "  ║     ██████╗ ██╗   ██╗██████╗ ██╗   ██╗████████╗███████╗         ║" -ForegroundColor Red
-Write-Host "  ║     ██╔══██╗██║   ██║██╔══██╗██║   ██║╚══██╔══╝██╔════╝         ║" -ForegroundColor Red
-Write-Host "  ║     ██████╔╝██║   ██║██████╔╝██║   ██║   ██║   █████╗           ║" -ForegroundColor Red
-Write-Host "  ║     ██╔══██╗██║   ██║██╔══██╗██║   ██║   ██║   ██╔══╝           ║" -ForegroundColor Red
-Write-Host "  ║     ██║  ██║╚██████╔╝██████╔╝╚██████╔╝   ██║   ███████╗         ║" -ForegroundColor Red
-Write-Host "  ║     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝         ║" -ForegroundColor Red
+Write-Host "  ║     ██████╗ ██╗   ██╗██████╗ ██╗   ██╗████████╗███████╗          ║" -ForegroundColor Red
+Write-Host "  ║     ██╔══██╗██║   ██║██╔══██╗██║   ██║╚══██╔══╝██╔════╝          ║" -ForegroundColor Red
+Write-Host "  ║     ██████╔╝██║   ██║██████╔╝██║   ██║   ██║   █████╗            ║" -ForegroundColor Red
+Write-Host "  ║     ██╔══██╗██║   ██║██╔══██╗██║   ██║   ██║   ██╔══╝            ║" -ForegroundColor Red
+Write-Host "  ║     ██║  ██║╚██████╔╝██████╔╝╚██████╔╝   ██║   ███████╗          ║" -ForegroundColor Red
+Write-Host "  ║     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝          ║" -ForegroundColor Red
 Write-Host "  ║                                                                  ║" -ForegroundColor Red
 Write-Host "  ║              ULTIMATE GAMING PERFORMANCE BOOSTER                 ║" -ForegroundColor Red
 Write-Host "  ║                                                                  ║" -ForegroundColor Red
