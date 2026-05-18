@@ -44,10 +44,10 @@ echo   Setting up database...
 
 echo.
 echo   ╔══════════════════════════════════════════════════════════════════╗
-echo   ║                    SETUP COMPLETE!                                ║
+echo   ║                       SETUP COMPLETE!                            ║
 echo   ╠══════════════════════════════════════════════════════════════════╣
-echo   ║                                                                    ║
-echo   ║  To start BRUTAL-FPS: Double-click start.bat                      ║
-echo   ║                                                                    ║
+echo   ║                                                                  ║
+echo   ║         To start BRUTAL-FPS: Double-click start.bat              ║
+echo   ║                                                                  ║
 echo   ╚══════════════════════════════════════════════════════════════════╝
 pause
