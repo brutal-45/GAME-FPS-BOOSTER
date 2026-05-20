@@ -12,7 +12,7 @@
 ║                                                                  ║ 
 ╚══════════════════════════════════════════════════════════════════╝ 
 
-                    DEVELOPED UNDER BRUTAL TOOLS
+                    DEVELOPED UNDER BRUTAL TOOLS 
 
 Thank you for choosing BRUTAL-FPS!
  
