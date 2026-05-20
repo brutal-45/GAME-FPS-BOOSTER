@@ -35,7 +35,7 @@ TIPS:
   • Close unnecessary apps before gaming
   • Check out the "Tweaks" tab for advanced options
 
-KEYBOARD SHORTCUTS:
+KEYBOARD SHORTCUTS: 
   Ctrl + B    Quick Boost
   Ctrl + M    Toggle Mini Mode
   Ctrl + S    Open Settings
