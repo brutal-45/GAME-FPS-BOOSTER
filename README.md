@@ -91,7 +91,7 @@
 ### 🆓 **100% FREE FOREVER**
 ```
 ┌────────────────────────────────┐
-│  💰 NO PREMIUM VERSION         │
+│  💰 NO PREMIUM VERSION         │ 
 │  🔓 NO HIDDEN COSTS            │
 │  ⭐ NO "PRO" PAYWALLS          │
 │  ✨ EVERYTHING FREE. FOREVER.  │
