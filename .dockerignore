@@ -10,5 +10,5 @@ yarn.lock
 pnpm-lock.yaml
 test
 *.log
-local-* 
+local-*
  
