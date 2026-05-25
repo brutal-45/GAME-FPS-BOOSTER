@@ -1,4 +1,4 @@
-import { app, BrowserWindow, Tray, Menu, nativeImage, shell, Notification } from 'electron';
+import { app, BrowserWindow, Tray, Menu, nativeImage, shell, Notification } from 'electron'; 
 import * as path from 'path'; 
 
 let mainWindow: BrowserWindow | null = null;
