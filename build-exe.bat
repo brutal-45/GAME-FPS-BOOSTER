@@ -1,4 +1,4 @@
-@echo off
+@echo off 
 title BRUTAL-FPS - Build Windows Executable
 color 0C
 cls
