@@ -3,7 +3,7 @@ title BRUTAL-FPS - Quick Build
 color 0C
 cls
 
-echo.
+echo. 
 echo   ╔══════════════════════════════════════════════════════════════════╗
 echo   ║                     BRUTAL-FPS BUILD SCRIPT                      ║
 echo   ╚══════════════════════════════════════════════════════════════════╝
