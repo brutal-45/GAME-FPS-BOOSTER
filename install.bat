@@ -10,7 +10,7 @@ echo   ╚═══════════════════════�
 echo.
 
 :: Check for Bun or Node
-where bun >nul 2>nul
+where bun >nul 2>nul 
 if %errorlevel% equ 0 (
     echo   [OK] Bun detected!
     set RUNNER=bun
