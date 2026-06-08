@@ -1,6 +1,6 @@
 <div align="center">
   
-  <!-- Animated Logo Placeholder -->
+  <!-- Animated Logo Placeholder --> 
   <img src="public/brutal-fps-logo.svg" alt="BRUTAL-FPS Logo" width="180" height="180">
   
   <!-- Title with glow effect -->
