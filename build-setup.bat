@@ -5,7 +5,7 @@ cls
 
 echo.
 echo   ╔══════════════════════════════════════════════════════════════════╗
-echo   ║                   BRUTAL-FPS SETUP BUILDER                       ║
+echo   ║                  BRUTAL-FPS SETUP BUILDER                        ║
 echo   ║               Create Windows Installer (.exe)                    ║
 echo   ╚══════════════════════════════════════════════════════════════════╝
 echo.
