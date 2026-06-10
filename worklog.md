@@ -1,5 +1,5 @@
 # BRUTAL-FPS Development Worklog
- 
+
 ---
 Task ID: 1
 Agent: Main Developer
