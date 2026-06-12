@@ -23,7 +23,7 @@ Work Log:
   - Settings panel with toggles for all preferences
   - Level/XP progression system with visual progress
 - Created API routes:
-  - /api/settings - GET/PUT user settings
+  - /api/settings - GET/PUT user settings 
   - /api/profiles - GET/POST/PUT/DELETE game profiles
   - /api/sessions - GET/POST optimization sessions
   - /api/stats - GET/PUT/POST user statistics and XP
