@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json", 
   "appId": "com.brutal-tools.brutal-fps",
   "productName": "BRUTAL-FPS", 
   "copyright": "Copyright © 2024 Brutal Tools",
