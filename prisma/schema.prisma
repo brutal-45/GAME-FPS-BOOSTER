@@ -112,7 +112,7 @@ model SystemTweak {
   riskLevel       String   @default("safe") // safe, moderate, aggressive
   isApplied       Boolean  @default(false)
   appliedAt       DateTime?
-  originalValue   String?
+  originalValue   String? 
   currentValue    String?
   isAntiCheatSafe Boolean  @default(true)
   affectedGames   String?  // JSON array of game IDs where this tweak helps
