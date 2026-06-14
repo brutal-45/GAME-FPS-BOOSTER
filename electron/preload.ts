@@ -7,7 +7,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   getAppPath: () => ipcRenderer.invoke('get-app-path'),
   
   // Notifications
-  showNotification: (title: string, body: string) => 
+  showNotification: (title: string, body: string) =>
     ipcRenderer.invoke('show-notification', title, body), 
   
   // Window controls
