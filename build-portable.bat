@@ -9,7 +9,7 @@ echo   ║                     BRUTAL-FPS BUILD SCRIPT                      ║
 echo   ╚══════════════════════════════════════════════════════════════════╝
 echo.
 
-:: Check for Bun 
+:: Check for Bun
 where bun >nul 2>nul
 if %errorlevel% neq 0 (
     echo   [ERROR] Bun is not installed!
