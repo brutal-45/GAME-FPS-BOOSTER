@@ -1,4 +1,4 @@
-@echo off 
+@echo off
 title BRUTAL-FPS - First Time Setup
 color 0C
 cls
