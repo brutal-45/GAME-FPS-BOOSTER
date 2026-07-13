@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server'; 
 import { readFileSync, existsSync, statSync } from 'fs';
 import { join } from 'path';
 
