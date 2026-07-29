@@ -1,4 +1,4 @@
-@echo off 
+@echo off
 title BRUTAL-FPS - Quick Build
 color 0C
 cls
