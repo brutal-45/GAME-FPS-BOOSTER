@@ -1,4 +1,4 @@
-@echo off 
+@echo off
 title BRUTAL-FPS - Build Setup.exe
 color 0C
 cls
