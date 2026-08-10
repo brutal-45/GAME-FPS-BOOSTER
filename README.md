@@ -47,7 +47,7 @@
   <!-- Quick navigation -->
   <p>
     <a href="#-features"><b>🎮 Features</b></a> •
-    <a href="#-download">(./INSTALLATION.md)<b>📥 Download</b></a> •
+    <a href="#-download"><b>📥 Download</b></a> •
     <a href="#-screenshots"><b>📸 Screenshots</b></a> •
     <a href="#-how-it-works"><b>⚙️ How It Works</b></a> •
     <a href="#-contributing"><b>🤝 Contributing</b></a>
