@@ -50,7 +50,9 @@
     "shortcutName": "BRUTAL-FPS",
     "installerIcon": "build/icon.ico",
     "uninstallerIcon": "build/icon.ico",
-    "installerHeaderIcon": "build/icon.ico"
+    "installerHeaderIcon": "build/icon.ico",
+    "license": "LICENSE",
+    "runAfterFinish": true
   },
   
   "portable": {
@@ -66,7 +68,11 @@
     ],
     "icon": "build/icon.icns",
     "category": "public.app-category.games",
-    "artifactName": "${productName}-${version}.${ext}"
+    "artifactName": "${productName}-${version}.${ext}",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "entitlements": "build/entitlements.mac.plist",
+    "entitlementsInherit": "build/entitlements.mac.plist"
   },
   
   "linux": {
@@ -82,7 +88,12 @@
     ],
     "icon": "build/icon.png",
     "category": "Game",
-    "artifactName": "${productName}-${version}.${ext}"
+    "artifactName": "${productName}-${version}.${ext}",
+    "desktop": {
+      "Name": "BRUTAL-FPS",
+      "Comment": "Ultimate Gaming Performance Booster",
+      "Categories": "Game;Entertainment;"
+    }
   },
   
   "publish": null
