@@ -30,6 +30,7 @@ If you want to build the application yourself, you'll need:
 
 ---
 
+<a id="windows-installation"></a>
 ## 💻 Windows Installation
 
 ### Option 1: Installer (Recommended)
@@ -83,6 +84,7 @@ Your executables will be in the `release/` folder.
 
 ---
 
+<a id="macos-installation"></a>
 ## 🍎 macOS Installation
 
 ### DMG Installer
@@ -131,6 +133,7 @@ Your DMG will be in the `release/` folder.
 
 ---
 
+<a id="linux-installation"></a>
 ## 🐧 Linux Installation
 
 ### Option 1: AppImage (Universal - Recommended)
