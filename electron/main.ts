@@ -1,5 +1,6 @@
-import { app, BrowserWindow, Tray, Menu, nativeImage, shell, Notification } from 'electron'; 
+import { app, BrowserWindow, Tray, Menu, nativeImage, shell } from 'electron'; 
 import * as path from 'path';
+import * as url from 'url';
 
 let mainWindow: BrowserWindow | null = null;
 let tray: Tray | null = null;
@@ -16,6 +17,19 @@ function getIconPath(): string {
   return path.join(__dirname, '../build/icon.png');
 }
 
+// Get the port for Next.js dev server or production URL
+function getAppUrl(): string {
+  if (app.isPackaged) {
+    // Production: Load from Next.js standalone server
+    // The server runs on port 3000 by default
+    const port = process.env.PORT || '3000';
+    return `http://localhost:${port}`;
+  } else {
+    // Development: Load from Next.js dev server
+    return 'http://localhost:3000';
+  }
+}
+
 // Create the main application window
 function createWindow(): void {
   mainWindow = new BrowserWindow({
@@ -30,16 +44,14 @@ function createWindow(): void {
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
+      preload: path.join(__dirname, 'preload.js')
     },
     show: false,
   });
 
-  // Load the standalone HTML file
-  if (app.isPackaged) {
-    mainWindow.loadFile(path.join(process.resourcesPath, 'app', 'index.html'));
-  } else {
-    mainWindow.loadFile(path.join(__dirname, '../public/brutal-fps-standalone.html'));
-  }
+  // Load the Next.js application
+  const appUrl = getAppUrl();
+  mainWindow.loadURL(appUrl);
 
   // Show window when ready
   mainWindow.once('ready-to-show', () => {
@@ -49,6 +61,9 @@ function createWindow(): void {
 
   // Handle external links
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+    if (url.startsWith('http://localhost')) {
+      return { action: 'allow' };
+    }
     shell.openExternal(url);
     return { action: 'deny' };
   });

@@ -40,7 +40,7 @@
     <img src="https://img.shields.io/badge/version-1.0.0-red?style=for-the-badge&logo=github&labelColor=000000&color=ff0000" alt="Version">
     <img src="https://img.shields.io/badge/downloads-2.5M%2B-brightgreen?style=for-the-badge&logo=download&labelColor=000000&color=00ff00" alt="Downloads">
     <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&labelColor=000000&color=00d4ff" alt="License">
-    <img src="https://img.shields.io/badge/platform-Windows-informational?style=for-the-badge&logo=windows&labelColor=000000&color=0078d4" alt="Platform">
+    <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-informational?style=for-the-badge&logo=windows&labelColor=000000&color=0078d4" alt="Platform">
     <img src="https://img.shields.io/badge/open%20source-100%25-success?style=for-the-badge&logo=opensourceinitiative&labelColor=000000&color=00ff88" alt="Open Source">
   </p>
   
@@ -48,6 +48,7 @@
   <p>
     <a href="#-features"><b>🎮 Features</b></a> •
     <a href="#-download"><b>📥 Download</b></a> •
+    <a href="#-installation"><b>📦 Installation</b></a> •
     <a href="#-screenshots"><b>📸 Screenshots</b></a> •
     <a href="#-how-it-works"><b>⚙️ How It Works</b></a> •
     <a href="#-contributing"><b>🤝 Contributing</b></a>
@@ -347,18 +348,20 @@
   
 ## 📥 **DOWNLOAD NOW**
   
-```
-╔═══════════════════════════════════════════════════════════════════════╗
-║                                                                       ║
-║                  🎮 GET BRUTAL-FPS - 100% FREE 🎮                     ║
-║                                                                       ║
-║                     ⬇️ CHOOSE YOUR VERSION ⬇️                        ║
-║                                                                       ║
-╚═══════════════════════════════════════════════════════════════════════╝
-```
+<div align="center">
 
-### **🌐 Option 1: Web Version (Recommended for Quick Start)**
+| Platform | Download | Type |
+|:--------:|:---------|:-----|
+| **Windows** | [📥 BRUTAL-FPS-Setup-1.0.0.exe](https://github.com/brutal-tools/brutal-fps/releases/latest) | Installer (.exe) |
+| **Windows Portable** | [📥 BRUTAL-FPS-Portable-1.0.0.exe](https://github.com/brutal-tools/brutal-fps/releases/latest) | No Install |
+| **macOS** | [📥 BRUTAL-FPS-1.0.0.dmg](https://github.com/brutal-tools/brutal-fps/releases/latest) | Intel + M1/M2/M3 |
+| **Linux** | [📥 BRUTAL-FPS-1.0.0.AppImage](https://github.com/brutal-tools/brutal-fps/releases/latest) | Universal |
+| **Linux (Debian)** | [📥 BRUTAL-FPS-1.0.0.deb](https://github.com/brutal-tools/brutal-fps/releases/latest) | Ubuntu/Debian |
 
+</div>
+
+
+---
 Run directly in your browser - no installation needed! Just download the source and run:
 
 ```bash

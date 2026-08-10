@@ -22,8 +22,11 @@
     "electron:build:portable": "bun run build && electron-builder --win portable --x64 --publish never",
     "electron:build:all": "bun run build && electron-builder -wml --x64 --publish never",
     "electron:dist": "bun run build && electron-builder --win --x64 --publish always",
-    "electron:mac": "bun run build && electron-builder --mac",
-    "electron:linux": "bun run build && electron-builder --linux"
+    "electron:mac": "bun run build && electron-builder --mac --universal",
+    "electron:linux": "bun run build && electron-builder --linux AppImage deb",
+    "electron:build:windows": "bun run build && electron-builder --win nsis portable --x64 --publish never",
+    "electron:build:mac-intel": "bun run build && electron-builder --mac --x64",
+    "electron:build:mac-arm": "bun run build && electron-builder --mac --arm64"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
