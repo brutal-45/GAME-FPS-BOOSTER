@@ -47,8 +47,8 @@
   <!-- Quick navigation -->
   <p>
     <a href="#-features"><b>🎮 Features</b></a> •
-    <a href="#-download"><b>📥 Download</b></a> •
-    <a href="#-installation"><b>📦 Installation</b></a> •
+    <a href="#-download-now"><b>📥 Download</b></a> •
+    <a href="INSTALLATION.md"><b>📦 Installation</b></a> •
     <a href="#-screenshots"><b>📸 Screenshots</b></a> •
     <a href="#-how-it-works"><b>⚙️ How It Works</b></a> •
     <a href="#-contributing"><b>🤝 Contributing</b></a>
@@ -346,6 +346,7 @@
 <!-- Download section with animation -->
 <div align="center">
   
+<a id="-download-now"></a>
 ## 📥 **DOWNLOAD NOW**
   
 <div align="center">
