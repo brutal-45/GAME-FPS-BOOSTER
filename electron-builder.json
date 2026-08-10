@@ -11,15 +11,13 @@
   
   "files": [
     "dist-electron/**/*",
+    ".next/standalone/**/*",
+    ".next/static/**/*",
+    "public/**/*",
     "package.json"
   ],
   
   "extraResources": [
-    {
-      "from": "public/brutal-fps-standalone.html",
-      "to": "app/index.html",
-      "filter": ["**/*"]
-    },
     {
       "from": "build",
       "to": "assets",
@@ -60,15 +58,31 @@
   },
   
   "mac": {
-    "target": "dmg",
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["x64", "arm64"]
+      }
+    ],
     "icon": "build/icon.icns",
-    "category": "public.app-category.games"
+    "category": "public.app-category.games",
+    "artifactName": "${productName}-${version}.${ext}"
   },
   
   "linux": {
-    "target": "AppImage",
+    "target": [
+      {
+        "target": "AppImage",
+        "arch": ["x64"]
+      },
+      {
+        "target": "deb",
+        "arch": ["x64"]
+      }
+    ],
     "icon": "build/icon.png",
-    "category": "Game"
+    "category": "Game",
+    "artifactName": "${productName}-${version}.${ext}"
   },
   
   "publish": null
