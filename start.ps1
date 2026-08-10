@@ -1,4 +1,4 @@
-# BRUTAL-FPS Quick Start Script for Windows PowerShell
+# BRUTAL-FPS Quick Start Script for Windows PowerShell 
 # Run this script to install and start BRUTAL-FPS
 
 $Host.UI.RawUI.WindowTitle = "BRUTAL-FPS - Ultimate Gaming Performance Booster"
