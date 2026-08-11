@@ -1,4 +1,4 @@
---- INSTALLATION.md (原始)
+--- INSTALLATION.md 
 # 💀 BRUTAL-FPS - Installation Guide
 
 > **The Ultimate Gaming Performance Booster**
