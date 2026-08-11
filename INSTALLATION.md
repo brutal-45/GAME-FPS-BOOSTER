@@ -1,6 +1,7 @@
+--- INSTALLATION.md (原始)
 # 💀 BRUTAL-FPS - Installation Guide
 
-> **The Ultimate Gaming Performance Booster**  
+> **The Ultimate Gaming Performance Booster**
 > *Unleash Every Frame. No Mercy. No Limits.*
 
 ---
@@ -240,16 +241,16 @@ BRUTAL-FPS runs in your system tray for quick access:
 
 #### Windows
 - Default: `C:\Program Files\BRUTAL-FPS`
-- User data: `%APPDATA%\BRUTAL-FPS`
+- User  `%APPDATA%\BRUTAL-FPS`
 
 #### macOS
 - Application: `/Applications/BRUTAL-FPS.app`
-- User data: `~/Library/Application Support/BRUTAL-FPS`
+- User  `~/Library/Application Support/BRUTAL-FPS`
 
 #### Linux
 - AppImage: Anywhere you place it
 - .deb install: `/opt/BRUTAL-FPS`
-- User data: `~/.config/BRUTAL-FPS`
+- User  `~/.config/BRUTAL-FPS`
 
 ### Command Line Options
 
@@ -386,3 +387,369 @@ Made with 💀 by **Brutal Tools**
 [Website](https://brutal-tools.com) • [GitHub](https://github.com/brutal-tools) • [Discord](https://discord.gg/brutalfps)
 
 </div>
+
++++ INSTALLATION.md (修改后)
+# 📦 BRUTAL-FPS Installation Guide
+
+Complete installation instructions for all platforms.
+
+---
+
+## 🔥 Quick Install (Recommended)
+
+### Windows Users
+1. **Download**: [BRUTAL-FPS-Setup.exe](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-Setup-1.0.0.exe)
+2. **Run**: Double-click the downloaded file
+3. **Install**: Follow the wizard (Next → Next → Finish)
+4. **Launch**: Click desktop icon or find in Start Menu
+
+### macOS Users
+1. **Download**: [BRUTAL-FPS.dmg](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.dmg)
+2. **Open**: Double-click the .dmg file
+3. **Install**: Drag BRUTAL-FPS to Applications folder
+4. **Launch**: Open from Applications or Launchpad
+
+### Linux Users
+**Option A: AppImage (Universal)**
+```bash
+# Download
+wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.AppImage
+
+# Make executable
+chmod +x BRUTAL-FPS-1.0.0.AppImage
+
+# Run
+./BRUTAL-FPS-1.0.0.AppImage
+```
+
+**Option B: Debian/Ubuntu Package**
+```bash
+# Download
+wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.deb
+
+# Install
+sudo dpkg -i BRUTAL-FPS-1.0.0.deb
+```
+
+---
+
+## 💻 Detailed Installation
+
+<a id="windows-installation"></a>
+### Windows Installation (NSIS Installer)
+
+**Requirements:**
+- Windows 7 SP1 or later (32/64-bit)
+- 100MB free disk space
+- Admin rights (recommended)
+
+**Steps:**
+
+1. **Download the installer**
+   - File: `BRUTAL-FPS-Setup-1.0.0.exe`
+   - Size: ~355 MB
+   - SHA256: (Available on releases page)
+
+2. **Run the installer**
+   ```
+   Double-click BRUTAL-FPS-Setup-1.0.0.exe
+   ```
+
+3. **Accept License Agreement**
+   - Read the MIT license
+   - Click "I Agree"
+
+4. **Choose Installation Location**
+   - Default: `C:\Program Files\BRUTAL-FPS`
+   - Or choose custom location
+   - Click "Next"
+
+5. **Select Additional Tasks**
+   - ☑ Create desktop shortcut
+   - ☑ Create Start Menu shortcut
+   - ☑ Add to PATH (optional)
+   - Click "Next"
+
+6. **Install**
+   - Click "Install"
+   - Wait for completion (~30 seconds)
+
+7. **Finish**
+   - ☑ Launch BRUTAL-FPS
+   - Click "Finish"
+
+**Uninstall:**
+- Go to Control Panel → Programs → Uninstall
+- Select "BRUTAL-FPS" and click Uninstall
+
+---
+
+<a id="windows-portable"></a>
+### Windows Portable Edition
+
+**Perfect for:** USB drives, no admin rights, testing
+
+**Steps:**
+
+1. **Download portable version**
+   - File: `BRUTAL-FPS-Portable-1.0.0.exe`
+   - No installation required!
+
+2. **Run directly**
+   ```
+   Double-click BRUTAL-FPS-Portable-1.0.0.exe
+   ```
+
+3. **Use anywhere**
+   - Copy to USB drive
+   - Run on any Windows PC
+   - No traces left behind
+
+---
+
+<a id="macos-installation"></a>
+### macOS Installation
+
+**Requirements:**
+- macOS 10.13 (High Sierra) or later
+- Intel or Apple Silicon (M1/M2/M3)
+- 100MB free disk space
+
+**Steps:**
+
+1. **Download DMG**
+   - File: `BRUTAL-FPS-1.0.0.dmg`
+   - Universal binary (Intel + Apple Silicon)
+
+2. **Open DMG**
+   ```bash
+   # Or double-click in Finder
+   open BRUTAL-FPS-1.0.0.dmg
+   ```
+
+3. **Drag to Applications**
+   - Drag BRUTAL-FPS icon to Applications folder
+   - Wait for copy to complete
+
+4. **First Launch**
+   - Open Applications folder
+   - Right-click BRUTAL-FPS
+   - Click "Open" (bypasses Gatekeeper)
+   - Click "Open" in warning dialog
+
+**Note:** On first launch, macOS may show a warning. This is normal for apps not from the App Store.
+
+**Uninstall:**
+```bash
+# Drag to Trash or run:
+rm -rf /Applications/BRUTAL-FPS.app
+```
+
+---
+
+<a id="linux-installation"></a>
+### Linux AppImage
+
+**Requirements:**
+- Linux kernel 3.0 or later
+- FUSE support
+- glibc 2.17+
+
+**Steps:**
+
+1. **Download AppImage**
+   ```bash
+   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.AppImage
+   ```
+
+2. **Make executable**
+   ```bash
+   chmod +x BRUTAL-FPS-1.0.0.AppImage
+   ```
+
+3. **Run**
+   ```bash
+   ./BRUTAL-FPS-1.0.0.AppImage
+   ```
+
+4. **Optional: Integrate with system**
+   ```bash
+   # Move to applications
+   mv BRUTAL-FPS-1.0.0.AppImage /opt/brutal-fps.AppImage
+
+   # Create desktop entry
+   echo '[Desktop Entry]
+   Name=BRUTAL-FPS
+   Exec=/opt/brutal-fps.AppImage
+   Icon=brutal-fps
+   Type=Application
+   Categories=Game;' | sudo tee /usr/share/applications/brutal-fps.desktop
+   ```
+
+---
+
+<a id="linux-debian"></a>
+### Linux Debian Package
+
+**Supported Distributions:**
+- Debian 10+
+- Ubuntu 18.04+
+- Linux Mint 19+
+- Pop!_OS 20.04+
+- Other Debian-based distros
+
+**Steps:**
+
+1. **Download .deb package**
+   ```bash
+   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.deb
+   ```
+
+2. **Install**
+   ```bash
+   sudo dpkg -i BRUTAL-FPS-1.0.0.deb
+   ```
+
+3. **Fix dependencies (if needed)**
+   ```bash
+   sudo apt-get install -f
+   ```
+
+4. **Launch**
+   - From applications menu
+   - Or run: `brutal-fps`
+
+**Uninstall:**
+```bash
+sudo apt-get remove brutal-fps
+```
+
+---
+
+## 🔧 Build from Source
+
+For advanced users who want to build locally:
+
+### Prerequisites
+
+```bash
+# Node.js 18+
+node --version  # Should be v18 or higher
+
+# npm or bun
+npm --version
+
+# Git
+git --version
+```
+
+### Clone Repository
+
+```bash
+git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.git
+cd GAME-FPS-BOOSTER
+```
+
+### Install Dependencies
+
+```bash
+npm install
+# or
+bun install
+```
+
+### Development Mode
+
+```bash
+# Run web app
+npm run dev
+
+# Run Electron app (desktop)
+npm run electron:dev
+```
+
+### Build Desktop Apps
+
+```bash
+# Build for current platform
+npm run electron:build
+
+# Build for all platforms
+npm run electron:build:all
+
+# Platform-specific builds
+npm run electron:build:windows
+npm run electron:build:mac-intel
+npm run electron:build:mac-arm
+npm run electron:linux
+```
+
+Output files will be in the `release/` folder.
+
+---
+
+## 🌐 Web Preview (Vercel)
+
+Want to preview the app before downloading?
+
+1. **Visit**: [https://brutal-fps.vercel.app](https://brutal-fps.vercel.app)
+2. **Explore**: View features, stats, and interface
+3. **Download**: Get full desktop app from the website
+
+**Deploy your own:**
+See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for deployment instructions.
+
+---
+
+## ❓ Troubleshooting
+
+### Windows Issues
+
+**Problem:** "Windows protected your PC" warning
+**Solution:** Click "More info" → "Run anyway" (safe, signed app)
+
+**Problem:** App won't start
+**Solution:**
+- Install Visual C++ Redistributable
+- Run as Administrator
+- Check antivirus quarantine
+
+### macOS Issues
+
+**Problem:** "App can't be opened" error
+**Solution:**
+```bash
+# Remove quarantine attribute
+xattr -rd com.apple.quarantine /Applications/BRUTAL-FPS.app
+```
+
+**Problem:** Not optimized for M1/M2
+**Solution:** The universal binary supports both Intel and Apple Silicon natively.
+
+### Linux Issues
+
+**Problem:** AppImage won't run
+**Solution:**
+```bash
+# Install FUSE
+sudo apt-get install fuse  # Debian/Ubuntu
+sudo dnf install fuse      # Fedora
+```
+
+**Problem:** Missing libraries
+**Solution:**
+```bash
+sudo apt-get install libgtk-3-0 libnotify4 libnss3 libxss1
+```
+
+---
+
+## 📞 Support
+
+- **Documentation**: [README.md](README.md)
+- **Issues**: [GitHub Issues](https://github.com/brutal-45/GAME-FPS-BOOSTER/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/brutal-45/GAME-FPS-BOOSTER/discussions)
+
+---
+
+**Enjoy BRUTAL-FPS! 🎮⚡**
