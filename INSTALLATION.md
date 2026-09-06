@@ -113,7 +113,7 @@ If you see a security warning:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/brutal-fps.git
+git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.git
 cd brutal-fps
 
 # Run the build script
