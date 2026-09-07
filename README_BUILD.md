@@ -103,8 +103,8 @@ sudo dnf install -y \
 ### Step 1: Clone or Download
 
 ```bash
-git clone https://github.com/yourusername/brutal-fps.git
-cd brutal-fps
+git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.git
+cd GAME-FPS-BOOSTER
 ```
 
 ### Step 2: Install Dependencies
@@ -156,6 +156,10 @@ npm run electron:build:all
 
 This builds everything at once (takes longer).
 
+> ⚠️ **Cross-platform note:** each installer type can only be built on its own OS
+> (`.dmg` on macOS, `.exe` on Windows, `.AppImage`/`.deb` on Linux). For one automatic
+> build of all platforms, push a `v*` tag and let the GitHub Actions workflow do it.
+
 ---
 
 ## 📦 Build Output
@@ -178,8 +182,8 @@ release/
 ### Linux Builds
 ```
 release/
-├── BRUTAL-FPS-1.0.0-x86_64.AppImage  # Universal AppImage
-└── BRUTAL-FPS-1.0.0-amd64.deb        # Debian package
+├── BRUTAL-FPS-1.0.0.AppImage  # Universal AppImage
+└── BRUTAL-FPS-1.0.0.deb        # Debian package
 ```
 
 ---
@@ -238,14 +242,14 @@ Edit `electron-builder.json` to customize:
 ### Building for Different Architectures
 
 ```bash
-# ARM64 (Apple Silicon, Raspberry Pi)
-npm run electron-builder -- --arm64
+# ARM64 Linux / Apple Silicon
+npx electron-builder --linux --arm64
 
 # 32-bit Windows
-npm run electron-builder -- --ia32
+npx electron-builder --win --ia32
 
 # Multiple architectures
-npm run electron-builder -- --x64 --arm64
+npx electron-builder --linux --x64 --arm64
 ```
 
 ### Code Signing (Production)
