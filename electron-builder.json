@@ -10,11 +10,10 @@
   },
   
   "files": [
-    "dist-electron/**/*",
-    ".next/standalone/**/*",
-    ".next/static/**/*",
+    "electron/**/*",
     "public/**/*",
-    "package.json"
+    "package.json",
+    "!node_modules/**/*"
   ],
   
   "extraResources": [
@@ -22,8 +21,15 @@
       "from": "build",
       "to": "assets",
       "filter": ["icon.*"]
+    },
+    {
+      "from": "public/brutal-fps-standalone.html",
+      "to": "app/index.html"
     }
   ],
+
+  "npmRebuild": false,
+  "buildDependenciesFromSource": false,
   
   "win": {
     "target": [

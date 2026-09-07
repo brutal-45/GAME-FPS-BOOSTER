@@ -12,3 +12,9 @@
 
 # Logs
 *.log
+
+# Build output
+release/
+dist/
+node_modules/
+package-lock.json
