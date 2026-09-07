@@ -1,235 +1,267 @@
---- INSTALLATION.md 
-# 💀 BRUTAL-FPS - Installation Guide
+# 📦 BRUTAL-FPS Installation Guide
 
-> **The Ultimate Gaming Performance Booster**
-> *Unleash Every Frame. No Mercy. No Limits.*
+Complete installation instructions for all platforms.
 
 ---
 
-## 📥 Quick Download
-
-> **Prebuilt binaries:** The GitHub Actions workflow (`.github/workflows/build.yml`) builds every
-> installer automatically and attaches them to a GitHub Release whenever a tag like `v1.0.0` is
-> pushed. Open the **Releases** page of the repo to download the Windows `.exe` (NSIS + portable),
-> macOS `.dmg` (universal Intel/Apple Silicon), and Linux `.AppImage` + `.deb`. You can also
-> trigger the same builds manually from the **Actions** tab → "Build & Release All Platforms" →
-> **Run workflow**.
+> **💡 Prebuilt binaries:** The GitHub Actions workflow (`.github/workflows/build.yml`) builds
+> every installer automatically and attaches them to a GitHub Release whenever a tag like
+> `v1.0.0` is pushed. Open the **Releases** page of the repo to download the Windows `.exe`
+> (NSIS + portable), macOS `.dmg` (universal), and Linux `.AppImage` + `.deb`. You can also
+> trigger the same builds manually from the **Actions** tab → "Build & Release All Platforms"
+> → **Run workflow** (this produces artifacts without creating a release).
 
 ---
 
-## 🔧 Prerequisites
+## 🔥 Quick Install (Recommended)
 
-### For Building from Source
+### Windows Users
+1. **Download**: [BRUTAL-FPS-Setup.exe](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-Setup-1.0.0.exe)
+2. **Run**: Double-click the downloaded file
+3. **Install**: Follow the wizard (Next → Next → Finish)
+4. **Launch**: Click desktop icon or find in Start Menu
 
-If you want to build the application yourself, you'll need:
+### macOS Users
+1. **Download**: [BRUTAL-FPS.dmg](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.dmg)
+2. **Open**: Double-click the .dmg file
+3. **Install**: Drag BRUTAL-FPS to Applications folder
+4. **Launch**: Open from Applications or Launchpad
 
-- **Node.js** (v18 or higher) OR **Bun** (recommended)
-  - Install Node.js: https://nodejs.org
-  - Install Bun: https://bun.sh
+### Linux Users
+**Option A: AppImage (Universal)**
+```bash
+# Download
+wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.AppImage
 
-- **Git** (optional, for cloning the repository)
-  - Download: https://git-scm.com
+# Make executable
+chmod +x BRUTAL-FPS-1.0.0.AppImage
+
+# Run
+./BRUTAL-FPS-1.0.0.AppImage
+```
+
+**Option B: Debian/Ubuntu Package**
+```bash
+# Download
+wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.deb
+
+# Install
+sudo dpkg -i BRUTAL-FPS-1.0.0.deb
+```
 
 ---
+
+## 💻 Detailed Installation
 
 <a id="windows-installation"></a>
-## 💻 Windows Installation
+### Windows Installation (NSIS Installer)
 
-### Option 1: Installer (Recommended)
+**Requirements:**
+- Windows 7 SP1 or later (32/64-bit)
+- 100MB free disk space
+- Admin rights (recommended)
 
-1. **Download** the installer: `BRUTAL-FPS-Setup-1.0.0.exe`
+**Steps:**
 
-2. **Run** the installer by double-clicking the file
+1. **Download the installer**
+   - File: `BRUTAL-FPS-Setup-1.0.0.exe`
+   - SHA256: (Available on releases page)
 
-3. **Follow** the installation wizard:
-   - Choose installation directory (default: `C:\Program Files\BRUTAL-FPS`)
-   - Create desktop shortcut (recommended)
-   - Create Start Menu shortcut (recommended)
+2. **Run the installer**
+   ```
+   Double-click BRUTAL-FPS-Setup-1.0.0.exe
+   ```
 
-4. **Launch** BRUTAL-FPS from:
-   - Desktop shortcut
-   - Start Menu
-   - System tray icon
+3. **Accept License Agreement**
+   - Read the MIT license
+   - Click "I Agree"
 
-### Option 2: Portable Version
+4. **Choose Installation Location**
+   - Default: `C:\Program Files\BRUTAL-FPS`
+   - Or choose custom location
+   - Click "Next"
 
-1. **Download** the portable version: `BRUTAL-FPS-Portable-1.0.0.exe`
+5. **Select Additional Tasks**
+   - ☑ Create desktop shortcut
+   - ☑ Create Start Menu shortcut
+   - Click "Next"
 
-2. **Place** it anywhere on your computer (e.g., Desktop, USB drive)
+6. **Install**
+   - Click "Install"
+   - Wait for completion (~30 seconds)
 
-3. **Run** by double-clicking the file
+7. **Finish**
+   - ☑ Launch BRUTAL-FPS
+   - Click "Finish"
 
-4. **No installation required!** Perfect for USB drives or restricted systems.
+**Uninstall:**
+- Go to Control Panel → Programs → Uninstall
+- Select "BRUTAL-FPS" and click Uninstall
 
-### Build from Source (Windows)
+---
 
-```batch
-# Clone the repository (or download and extract)
-git clone https://github.com/yourusername/brutal-fps.git
-cd brutal-fps
+<a id="windows-portable"></a>
+### Windows Portable Edition
 
-# Run the build script
-build-exe.bat
-```
+**Perfect for:** USB drives, no admin rights, testing
 
-Or manually:
+**Steps:**
 
-```batch
-# Install dependencies
-npm install
+1. **Download portable version**
+   - File: `BRUTAL-FPS-Portable-1.0.0.exe`
+   - No installation required!
 
-# Build the application
-npm run electron:build:all
-```
+2. **Run directly**
+   ```
+   Double-click BRUTAL-FPS-Portable-1.0.0.exe
+   ```
 
-Your executables will be in the `release/` folder.
+3. **Use anywhere**
+   - Copy to USB drive
+   - Run on any Windows PC
+   - No traces left behind
 
 ---
 
 <a id="macos-installation"></a>
-## 🍎 macOS Installation
+### macOS Installation
 
-### DMG Installer
+**Requirements:**
+- macOS 10.13 (High Sierra) or later
+- Intel or Apple Silicon (M1/M2/M3)
+- 100MB free disk space
 
-1. **Download** the DMG file: `BRUTAL-FPS-1.0.0.dmg`
+**Steps:**
 
-2. **Open** the DMG file by double-clicking it
+1. **Download DMG**
+   - File: `BRUTAL-FPS-1.0.0.dmg`
+   - Universal binary (Intel + Apple Silicon)
 
-3. **Drag** the BRUTAL-FPS icon to the Applications folder
+2. **Open DMG**
+   ```bash
+   # Or double-click in Finder
+   open BRUTAL-FPS-1.0.0.dmg
+   ```
 
-4. **Eject** the DMG after installation
+3. **Drag to Applications**
+   - Drag BRUTAL-FPS icon to Applications folder
+   - Wait for copy to complete
 
-5. **Launch** from Applications folder or Launchpad
+4. **First Launch**
+   - Open Applications folder
+   - Right-click BRUTAL-FPS
+   - Click "Open" (bypasses Gatekeeper)
+   - Click "Open" in warning dialog
 
-> **Note for Apple Silicon (M1/M2/M3):** The app supports both Intel and Apple Silicon Macs.
+**Note:** On first launch, macOS may show a warning. This is normal for apps not from the App Store.
 
-### First Time Launch
-
-If you see a security warning:
-1. Go to **System Preferences** → **Security & Privacy**
-2. Click **Open Anyway**
-3. Confirm you want to open BRUTAL-FPS
-
-### Build from Source (macOS)
-
+**Uninstall:**
 ```bash
-# Clone the repository
-git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.git
-cd brutal-fps
-
-# Run the build script
-./build-mac.sh
+# Drag to Trash or run:
+rm -rf /Applications/BRUTAL-FPS.app
 ```
-
-Or manually:
-
-```bash
-# Install dependencies
-npm install
-
-# Build the application
-npm run electron-builder -- --mac
-```
-
-Your DMG will be in the `release/` folder.
 
 ---
 
 <a id="linux-installation"></a>
-## 🐧 Linux Installation
+### Linux AppImage
 
-### Option 1: AppImage (Universal - Recommended)
+**Requirements:**
+- Linux kernel 3.0 or later
+- FUSE support
+- glibc 2.17+
 
-AppImage works on most modern Linux distributions without installation.
+**Steps:**
 
-1. **Download** the AppImage: `BRUTAL-FPS-1.0.0.AppImage`
+1. **Download AppImage**
+   ```bash
+   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.AppImage
+   ```
 
-2. **Make it executable:**
+2. **Make executable**
    ```bash
    chmod +x BRUTAL-FPS-1.0.0.AppImage
    ```
 
-3. **Run** the application:
+3. **Run**
    ```bash
    ./BRUTAL-FPS-1.0.0.AppImage
    ```
 
-4. **(Optional)** Integrate with your system:
+4. **Optional: Integrate with system**
    ```bash
-   # Using appimagelauncher (recommended)
-   # Or manually create a .desktop file
+   # Move to applications
+   mv BRUTAL-FPS-1.0.0.AppImage /opt/brutal-fps.AppImage
+
+   # Create desktop entry
+   echo '[Desktop Entry]
+   Name=BRUTAL-FPS
+   Exec=/opt/brutal-fps.AppImage
+   Icon=brutal-fps
+   Type=Application
+   Categories=Game;' | sudo tee /usr/share/applications/brutal-fps.desktop
    ```
-
-### Option 2: Debian Package (.deb)
-
-For Debian, Ubuntu, Linux Mint, and derivatives:
-
-1. **Download** the .deb package: `BRUTAL-FPS-1.0.0.deb`
-
-2. **Install** using one of these methods:
-
-   **Method A - Terminal:**
-   ```bash
-   sudo dpkg -i BRUTAL-FPS-1.0.0.deb
-   sudo apt-get install -f  # Fix any missing dependencies
-   ```
-
-   **Method B - GUI:**
-   - Double-click the .deb file
-   - Click "Install" in your software center
-
-3. **Launch** from your applications menu or terminal:
-   ```bash
-   brutal-fps
-   ```
-
-### Build from Source (Linux)
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/brutal-fps.git
-cd brutal-fps
-
-# Run the build script
-./build-linux.sh
-```
-
-Or manually:
-
-```bash
-# Install dependencies
-npm install
-
-# Build the application
-npm run electron-builder -- --linux
-```
-
-Your packages will be in the `release/` folder.
 
 ---
 
-## 🚀 Running BRUTAL-FPS
+<a id="linux-debian"></a>
+### Linux Debian Package
 
-### After Installation
+**Supported Distributions:**
+- Debian 10+
+- Ubuntu 18.04+
+- Linux Mint 19+
+- Pop!_OS 20.04+
+- Other Debian-based distros
 
+**Steps:**
+
+1. **Download .deb package**
+   ```bash
+   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.deb
+   ```
+
+2. **Install**
+   ```bash
+   sudo dpkg -i BRUTAL-FPS-1.0.0.deb
+   ```
+
+3. **Fix dependencies (if needed)**
+   ```bash
+   sudo apt-get install -f
+   ```
+
+4. **Launch**
+   - From the applications menu
+   - Or directly: `/opt/BRUTAL-FPS/brutal-fps`
+
+**Uninstall:**
+```bash
+sudo apt-get remove brutal-fps
+```
+
+---
+
+---
+
+<a id="linux-kali"></a>
 ### Kali Linux (Debian-based)
 
-Kali Linux is Debian-based, so it is fully supported. There are no prebuilt binaries on
-GitHub yet, so **build from source**:
+Kali Linux is Debian-based, so it is fully supported.
 
-**Step 1 - Install prerequisites (Bun + build/Electron libraries):**
+**Step 1 - Install prerequisites (Bun + Electron libraries):**
 
 ```bash
 sudo apt update
-sudo apt install -y git curl libgtk-3-0 libnotify4 libnss3 libxss1 libasound2 libgbm1 fuse
+sudo apt install -y git curl libgtk-3-0 libnotify4 libnss3 libxss1 libasound2 fuse
 
-# Install Bun (recommended - the project uses bun.lock)
+# Bun is recommended (the project uses bun.lock)
 curl -fsSL https://bun.sh/install | bash
 source ~/.bashrc
 ```
 
-> **Note for newer Kali (2025.x, Debian trixie):** some packages use the `t64` suffix.
-> If `libgtk-3-0` or `libasound2` is not found, install `libgtk-3-0t64` and `libasound2t64` instead.
+> **Note for newer Kali (2025.x / Debian trixie):** some packages use the `t64` suffix.
+> If `libgtk-3-0` or `libasound2` is missing, install `libgtk-3-0t64` and `libasound2t64`.
 
 **Step 2 - Clone and build:**
 
@@ -246,7 +278,12 @@ This creates `release/BRUTAL-FPS-1.0.0.AppImage` and `release/BRUTAL-FPS-1.0.0.d
 ```bash
 sudo dpkg -i release/BRUTAL-FPS-1.0.0.deb
 sudo apt-get install -f   # fix any missing dependencies
-brutal-fps
+```
+
+Then launch from the applications menu, or run the binary directly:
+
+```bash
+/opt/BRUTAL-FPS/brutal-fps
 ```
 
 **Step 3b - Or just run the AppImage (no install):**
@@ -256,134 +293,142 @@ chmod +x release/BRUTAL-FPS-1.0.0.AppImage
 ./release/BRUTAL-FPS-1.0.0.AppImage
 ```
 
-If you get a FUSE error, either install `fuse` (`sudo apt install -y fuse`) or run with:
-`./release/BRUTAL-FPS-1.0.0.AppImage --appimage-extract-and-run`
+If you get a FUSE error, install `fuse` (`sudo apt install -y fuse`) or run with
+`./release/BRUTAL-FPS-1.0.0.AppImage --appimage-extract-and-run`.
 
-**Step 4 - Optional desktop shortcut for AppImage:**
+## 🔧 Build from Source
+
+For advanced users who want to build locally:
+
+### Prerequisites
 
 ```bash
-mkdir -p ~/.local/share/applications
-cat > ~/.local/share/applications/brutal-fps.desktop <<EOF
-[Desktop Entry]
-Name=BRUTAL-FPS
-Exec=$HOME/GAME-FPS-BOOSTER/release/BRUTAL-FPS-1.0.0.AppImage
-Icon=$HOME/GAME-FPS-BOOSTER/build/icon.png
-Type=Application
-Categories=Game;Entertainment;
-EOF
-```
-- Make sure you have Visual C++ Redistributables installed
-- Try running as Administrator
-- Check Windows Defender isn't blocking the app
+# Node.js 18+
+node --version  # Should be v18 or higher
 
-**"Installer fails"**
-- Disable antivirus temporarily during installation
-- Ensure you have write permissions to Program Files
+# npm or bun
+npm --version
+
+# Git
+git --version
+```
+
+### Clone Repository
+
+```bash
+git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.git
+cd GAME-FPS-BOOSTER
+```
+
+### Install Dependencies
+
+```bash
+npm install
+# or
+bun install
+```
+
+### Development Mode
+
+```bash
+# Run web app
+npm run dev
+
+# Run Electron app (desktop)
+npm run electron:dev
+```
+
+### Build Desktop Apps
+
+> 💡 **Cross-platform note:** `.dmg` can only be built on macOS, `.exe` on Windows,
+> `.AppImage`/`.deb` on Linux. The GitHub Actions workflow builds all three automatically
+> when you push a `v*` tag.
+
+```bash
+# Or use the one-click scripts:
+./build-linux.sh    # Linux AppImage + .deb
+./build-mac.sh      # macOS universal DMG
+build-exe.bat       # Windows installer + portable
+
+# Build for current platform
+npm run electron:build
+
+# Build for all platforms
+npm run electron:build:all
+
+# Platform-specific builds
+npm run electron:build:windows
+npm run electron:build:mac-intel
+npm run electron:build:mac-arm
+npm run electron:linux
+```
+
+Output files will be in the `release/` folder.
+
+---
+
+## 🌐 Web Preview (Vercel)
+
+Want to preview the app before downloading?
+
+1. **Visit**: [https://brutal-fps.vercel.app](https://brutal-fps.vercel.app)
+2. **Explore**: View features, stats, and interface
+3. **Download**: Get full desktop app from the website
+
+**Deploy your own:**
+See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for deployment instructions.
+
+---
+
+## ❓ Troubleshooting
+
+### Windows Issues
+
+**Problem:** "Windows protected your PC" warning
+**Solution:** Click "More info" → "Run anyway" (safe, signed app)
+
+**Problem:** App won't start
+**Solution:**
+- Install Visual C++ Redistributable
+- Run as Administrator
+- Check antivirus quarantine
 
 ### macOS Issues
 
-**"App can't be opened because it's from an unidentified developer"**
-- Go to System Preferences → Security & Privacy
-- Click "Open Anyway"
-- Or right-click → Open → Open
+**Problem:** "App can't be opened" error
+**Solution:**
+```bash
+# Remove quarantine attribute
+xattr -rd com.apple.quarantine /Applications/BRUTAL-FPS.app
+```
+
+**Problem:** Not optimized for M1/M2
+**Solution:** The universal binary supports both Intel and Apple Silicon natively.
 
 ### Linux Issues
 
-**"Permission denied" with AppImage**
+**Problem:** AppImage won't run
+**Solution:**
 ```bash
-chmod +x BRUTAL-FPS-*.AppImage
+# Install FUSE
+sudo apt-get install fuse  # Debian/Ubuntu
+sudo dnf install fuse      # Fedora
 ```
 
-**".deb installation fails"**
+**Problem:** Missing libraries
+**Solution:**
 ```bash
-sudo apt-get update
-sudo apt-get install -f
-sudo dpkg -i BRUTAL-FPS-*.deb
-```
-
-**"Missing dependencies"**
-```bash
-# Ubuntu/Debian
 sudo apt-get install libgtk-3-0 libnotify4 libnss3 libxss1
-
-# Fedora
-sudo dnf install gtk3 notify libXScrnSaver
-
-# Arch
-sudo pacman -S gtk3 libnotify nss libxss
 ```
-
----
-
-## 📦 Building for All Platforms
-
-If you want to build installers for all platforms:
-
-```bash
-# Install dependencies
-npm install
-
-# Build for Windows, macOS, and Linux
-npm run electron:build:all
-```
-
-This will create:
-- Windows: `.exe` installer and portable version
-- macOS: `.dmg` installer (Intel + Apple Silicon)
-- Linux: `.AppImage` and `.deb` packages
-
-All files will be in the `release/` directory.
-
----
-
-## 🎮 System Requirements
-
-### Minimum Requirements
-
-| Component | Requirement |
-|-----------|-------------|
-| **OS** | Windows 7+, macOS 10.13+, or Linux (any modern distro) |
-| **CPU** | Intel Celeron or equivalent |
-| **RAM** | 2GB minimum |
-| **Storage** | 100MB free space |
-| **Display** | 1024x768 resolution |
-
-### Recommended Requirements
-
-| Component | Requirement |
-|-----------|-------------|
-| **OS** | Windows 10/11, macOS 11+, or Ubuntu 20.04+ |
-| **CPU** | Intel i3 / AMD Ryzen 3 or better |
-| **RAM** | 4GB or more |
-| **Storage** | 500MB free space |
 
 ---
 
 ## 📞 Support
 
-Having issues? Here's how to get help:
-
-1. **Check this guide** thoroughly
-2. **Review** the FAQ in the application
-3. **Open an issue** on GitHub
-4. **Contact** support@brutal-tools.com
+- **Documentation**: [README.md](README.md)
+- **Issues**: [GitHub Issues](https://github.com/brutal-45/GAME-FPS-BOOSTER/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/brutal-45/GAME-FPS-BOOSTER/discussions)
 
 ---
 
-## 📄 License
-
-MIT License - See LICENSE file for details
-
-**BRUTAL-FPS** is 100% FREE forever. No premium versions, no hidden costs, no paywalls.
-
----
-
-<div align="center">
-
-### ⚔️ **DESTROY LAG. DOMINATE GAMES.** ⚔️
-
-Made with 💀 by **Brutal Tools**
-
-[Website](https://brutal-tools.com) • [GitHub](https://github.com/brutal-tools) • [Discord](https://discord.gg/brutalfps)
-
-</div>
+**Enjoy BRUTAL-FPS! 🎮⚡**
