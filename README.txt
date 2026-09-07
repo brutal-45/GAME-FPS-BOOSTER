@@ -40,7 +40,7 @@ SUPPORT:
 
 Website:  https://brutal-tools.com 
 Discord:  https://discord.gg/brutal-fps
-GitHub:   https://github.com/brutal-tools/brutal-fps
+GitHub:   https://github.com/brutal-45/GAME-FPS-BOOSTER
 
 LICENSE:
 ────────────────────────────────────────────────────────────────────────
