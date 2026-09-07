@@ -8,11 +8,12 @@
 
 ## 📥 Quick Download
 
-| Platform | Download | Instructions |
-|----------|----------|--------------|
-| **Windows** | [Get Installer](#windows-installation) | `.exe` installer or portable version |
-| **macOS** | [Get DMG](#macos-installation) | `.dmg` for Intel & Apple Silicon |
-| **Linux** | [Get AppImage](#linux-installation) | AppImage or `.deb` package |
+> **Prebuilt binaries:** The GitHub Actions workflow (`.github/workflows/build.yml`) builds every
+> installer automatically and attaches them to a GitHub Release whenever a tag like `v1.0.0` is
+> pushed. Open the **Releases** page of the repo to download the Windows `.exe` (NSIS + portable),
+> macOS `.dmg` (universal Intel/Apple Silicon), and Linux `.AppImage` + `.deb`. You can also
+> trigger the same builds manually from the **Actions** tab → "Build & Release All Platforms" →
+> **Run workflow**.
 
 ---
 
@@ -211,67 +212,66 @@ Your packages will be in the `release/` folder.
 
 ### After Installation
 
-1. **Launch** the application using your platform's method above
+### Kali Linux (Debian-based)
 
-2. **Wait** for the dashboard to load
+Kali Linux is Debian-based, so it is fully supported. There are no prebuilt binaries on
+GitHub yet, so **build from source**:
 
-3. **Click** "BRUTAL BOOST" to optimize your system
-
-4. **Choose** a boost mode based on your needs:
-   - 🟢 **Balanced** - Safe, everyday gaming
-   - ⚡ **Performance** - Competitive gaming
-   - 🔥 **Brutal** - Serious FPS gains
-   - 💀 **Extreme** - Maximum performance
-   - 🥔 **Potato** - For low-end PCs
-   - 🌙 **Silent** - For laptops
-
-### System Tray
-
-BRUTAL-FPS runs in your system tray for quick access:
-- **Right-click** the tray icon for quick actions
-- **Quick Boost** - Instant optimization
-- **Open Dashboard** - Full control panel
-- **Quit** - Close the application
-
----
-
-## ⚙️ Advanced Configuration
-
-### Custom Installation Paths
-
-#### Windows
-- Default: `C:\Program Files\BRUTAL-FPS`
-- User  `%APPDATA%\BRUTAL-FPS`
-
-#### macOS
-- Application: `/Applications/BRUTAL-FPS.app`
-- User  `~/Library/Application Support/BRUTAL-FPS`
-
-#### Linux
-- AppImage: Anywhere you place it
-- .deb install: `/opt/BRUTAL-FPS`
-- User  `~/.config/BRUTAL-FPS`
-
-### Command Line Options
+**Step 1 - Install prerequisites (Bun + build/Electron libraries):**
 
 ```bash
-# Windows
-BRUTAL-FPS.exe --no-sandbox  # If you encounter issues
+sudo apt update
+sudo apt install -y git curl libgtk-3-0 libnotify4 libnss3 libxss1 libasound2 libgbm1 fuse
 
-# macOS
-/Applications/BRUTAL-FPS.app/Contents/MacOS/BRUTAL-FPS --no-sandbox
-
-# Linux
-./BRUTAL-FPS-1.0.0.AppImage --no-sandbox
+# Install Bun (recommended - the project uses bun.lock)
+curl -fsSL https://bun.sh/install | bash
+source ~/.bashrc
 ```
 
----
+> **Note for newer Kali (2025.x, Debian trixie):** some packages use the `t64` suffix.
+> If `libgtk-3-0` or `libasound2` is not found, install `libgtk-3-0t64` and `libasound2t64` instead.
 
-## 🛠️ Troubleshooting
+**Step 2 - Clone and build:**
 
-### Windows Issues
+```bash
+git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.git
+cd GAME-FPS-BOOSTER
+./build-linux.sh
+```
 
-**"Application won't start"**
+This creates `release/BRUTAL-FPS-1.0.0.AppImage` and `release/BRUTAL-FPS-1.0.0.deb`.
+
+**Step 3a - Install the .deb (recommended):**
+
+```bash
+sudo dpkg -i release/BRUTAL-FPS-1.0.0.deb
+sudo apt-get install -f   # fix any missing dependencies
+brutal-fps
+```
+
+**Step 3b - Or just run the AppImage (no install):**
+
+```bash
+chmod +x release/BRUTAL-FPS-1.0.0.AppImage
+./release/BRUTAL-FPS-1.0.0.AppImage
+```
+
+If you get a FUSE error, either install `fuse` (`sudo apt install -y fuse`) or run with:
+`./release/BRUTAL-FPS-1.0.0.AppImage --appimage-extract-and-run`
+
+**Step 4 - Optional desktop shortcut for AppImage:**
+
+```bash
+mkdir -p ~/.local/share/applications
+cat > ~/.local/share/applications/brutal-fps.desktop <<EOF
+[Desktop Entry]
+Name=BRUTAL-FPS
+Exec=$HOME/GAME-FPS-BOOSTER/release/BRUTAL-FPS-1.0.0.AppImage
+Icon=$HOME/GAME-FPS-BOOSTER/build/icon.png
+Type=Application
+Categories=Game;Entertainment;
+EOF
+```
 - Make sure you have Visual C++ Redistributables installed
 - Try running as Administrator
 - Check Windows Defender isn't blocking the app
