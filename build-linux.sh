@@ -28,12 +28,8 @@ echo "[*] Installing dependencies..."
 $RUNNER install
 
 echo ""
-echo "[*] Building Next.js application..."
-$RUNNER run build
-
-echo ""
 echo "[*] Building Linux packages (AppImage and .deb)..."
-$RUNNER run electron-builder --linux
+$RUNNER run electron:linux
 
 echo ""
 echo "╔══════════════════════════════════════════════════════════════════╗"
