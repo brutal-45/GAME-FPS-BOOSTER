@@ -10,18 +10,33 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # AppImage creation requires elevated permissions to mount images/containers
-    container:
-      image: ubuntu:22.04
-      options: --privileged -v /var/run/docker.sock:/var/run/docker.sock
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # (Optional) Insert steps here to compile your app if needed
+      # Install system dependencies required by appimage-builder
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            python3-pip \
+            python3-setuptools \
+            patchelf \
+            desktop-file-utils \
+            libgdk-pixbuf2.0-dev \
+            squashfs-tools \
+            fakeroot \
+            zsync \
+            wget
 
+      # Install appimage-builder via pip
+      - name: Install appimage-builder
+        run: |
+          sudo pip3 install appimage-builder
+
+      # (Optional) Insert steps here to compile your app before building the AppImage
+
+      # Build AppImage with --skip-test to prevent FUSE mounting errors inside GitHub Actions
       - name: Build AppImage
-        uses: AppImageCrafters/build-appimage-action@v1
-        with:
-          recipe: "./AppImageBuilder.yml"
+        run: |
+          appimage-builder --recipe ./AppImageBuilder.yml --skip-test
