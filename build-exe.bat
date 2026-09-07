@@ -36,10 +36,6 @@ echo  [*] Installing dependencies...
 %RUNNER% install
 
 echo.
-echo  [*] Building Next.js application...
-%RUNNER% run build
-
-echo.
 echo  [*] Building Windows executable...
 %RUNNER% run electron:build
 
@@ -49,7 +45,7 @@ echo  ║                    BUILD COMPLETE!                               ║
 echo  ╚══════════════════════════════════════════════════════════════════╝
 echo.
 echo  Your executable is ready in the 'release' folder:
-echo    - BRUTAL-FPS-1.0.0-x64.exe (Installer)
+echo    - BRUTAL-FPS-Setup-1.0.0.exe (Installer)
 echo    - BRUTAL-FPS-Portable-1.0.0.exe (Portable)
 echo.
 pause
