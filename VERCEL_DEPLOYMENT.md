@@ -1,7 +1,3 @@
---- VERCEL_DEPLOYMENT.md
-
-
-+++ VERCEL_DEPLOYMENT.md
 # 🚀 Vercel Deployment Guide
 
 This guide explains how to deploy the BRUTAL-FPS web application to Vercel.
@@ -20,7 +16,17 @@ This guide explains how to deploy the BRUTAL-FPS web application to Vercel.
 
 Click the button above and follow the prompts to deploy instantly.
 
-### Option 2: Deploy via CLI
+### Option 2: Auto-deploy with GitHub Actions (optional)
+
+A reference workflow is included at `deploy-vercel.yml`. It deploys on every push to `main` —
+add it to `.github/workflows/deploy-vercel.yml` (or enable it via a GitHub Action file) and set
+these repository secrets:
+
+- `VERCEL_TOKEN`
+- `VERCEL_ORG_ID`
+- `VERCEL_PROJECT_ID`
+
+### Option 3: Deploy via CLI
 
 ```bash
 # Install Vercel CLI globally
@@ -108,9 +114,9 @@ npm run build
 ### Downloads Not Working
 
 **Issue**: Download API returns 404
-**Solution**: Ensure files exist in `public/download/`:
-- `BRUTAL-FPS-Windows-Portable.zip`
-- `brutal-fps-standalone.html` (in `public/`)
+**Solution**: The API at `/api/download` serves the app in `public/brutal-fps-standalone.html`
+(already in the repo, so it works by default). The Windows portable ZIP is optional: place
+`BRUTAL-FPS-Windows-Portable.zip` in `public/download/` to enable that download link.
 
 ### Large File Size
 
