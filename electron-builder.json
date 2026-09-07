@@ -17,6 +17,7 @@
   ],
   
   "extraResources": [
+    {
       "from": "build",
       "to": "assets",
       "filter": ["icon.*"]
@@ -32,6 +33,12 @@
   
   "win": {
     "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
         "arch": ["x64"]
       }
     ],
@@ -85,6 +92,7 @@
         "arch": ["x64"]
       }
     ],
+    "executableName": "brutal-fps",
     "icon": "build/icon.png",
     "category": "Game",
     "artifactName": "${productName}-${version}.${ext}",
