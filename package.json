@@ -1,4 +1,4 @@
-{ 
+{
   "name": "brutal-fps",
   "version": "1.0.0",
   "private": true,
@@ -7,7 +7,7 @@
     "email": "contact@brutal-tools.com"
   },
   "description": "BRUTAL-FPS - Ultimate Gaming Performance Booster. Boost FPS by 30-60% with one click!",
-  "main": "dist-electron/main.js",
+  "main": "electron/main.js",
   "scripts": {
     "dev": "NODE_OPTIONS='--no-warnings' next dev -p 3000 2>&1 | tee dev.log",
     "build": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
@@ -18,15 +18,15 @@
     "db:migrate": "prisma migrate dev",
     "db:reset": "prisma migrate reset",
     "electron:dev": "concurrently \"bun run dev\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron:build": "bun run build && electron-builder --win --x64 --publish never",
-    "electron:build:portable": "bun run build && electron-builder --win portable --x64 --publish never",
-    "electron:build:all": "bun run build && electron-builder -wml --x64 --publish never",
-    "electron:dist": "bun run build && electron-builder --win --x64 --publish always",
-    "electron:mac": "bun run build && electron-builder --mac --universal",
-    "electron:linux": "bun run build && electron-builder --linux AppImage deb",
-    "electron:build:windows": "bun run build && electron-builder --win nsis portable --x64 --publish never",
-    "electron:build:mac-intel": "bun run build && electron-builder --mac --x64",
-    "electron:build:mac-arm": "bun run build && electron-builder --mac --arm64"
+    "electron:build": "electron-builder --win --x64 --publish never",
+    "electron:build:portable": "electron-builder --win portable --x64 --publish never",
+    "electron:build:all": "electron-builder -wml --x64 --publish never",
+    "electron:dist": "electron-builder --win --x64 --publish always",
+    "electron:mac": "electron-builder --mac --universal",
+    "electron:linux": "electron-builder --linux AppImage deb",
+    "electron:build:windows": "electron-builder --win nsis portable --x64 --publish never",
+    "electron:build:mac-intel": "electron-builder --mac --x64",
+    "electron:build:mac-arm": "electron-builder --mac --arm64"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
