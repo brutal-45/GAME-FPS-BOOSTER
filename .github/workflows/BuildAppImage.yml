@@ -1,0 +1,30 @@
+name: Build AppImage (Manual)
+
+on: [push]
+
+jobs:
+  build-appimage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Build Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libfuse2 # Required to run AppImage tools inside GitHub Actions
+
+      - name: Build Application
+        run: |
+          # Add your application compilation commands here
+          # Make sure it installs into a local AppDir directory (e.g., ./AppDir)
+
+      - name: Package with linuxdeploy
+        run: |
+          # Download linuxdeploy
+          wget -q https://github.com
+          chmod +x linuxdeploy-x86_64.AppImage
+          
+          # Run linuxdeploy to generate the AppImage from your AppDir
+          export OUTPUT="YourAppName-x86_64.AppImage"
+          ./linuxdeploy-x86_64.AppImage --appdir ./AppDir --output appimage
