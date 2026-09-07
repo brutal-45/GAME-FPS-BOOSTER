@@ -1,0 +1,23 @@
+name: Build AppImage
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # (Optional) Insert steps here to compile your app if needed
+      # e.g., run cmake, make, npm build, etc.
+
+      - name: Build AppImage
+        uses: AppImageCrafters/build-appimage@master
+        with:
+          recipe: "./AppImageBuilder.yml" # Path to your appimage-builder recipe file
