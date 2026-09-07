@@ -7,7 +7,7 @@ Complete installation instructions for all platforms.
 > **💡 Prebuilt binaries:** The GitHub Actions workflow (`.github/workflows/build.yml`) builds
 > every installer automatically and attaches them to a GitHub Release whenever a tag like
 > `v1.0.0` is pushed. Open the **Releases** page of the repo to download the Windows `.exe`
-> (NSIS + portable), macOS `.dmg` (universal), and Linux `.AppImage` + `.deb`. You can also
+> (NSIS + portable), macOS `.dmg` for Intel (`-x64`) and Apple Silicon (`-arm64`), and Linux `.AppImage` + `.deb`. You can also
 > trigger the same builds manually from the **Actions** tab → "Build & Release All Platforms"
 > → **Run workflow** (this produces artifacts without creating a release).
 
@@ -22,9 +22,9 @@ Complete installation instructions for all platforms.
 4. **Launch**: Click desktop icon or find in Start Menu
 
 ### macOS Users
-1. **Download**: [BRUTAL-FPS.dmg](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.dmg)
+1. **Download**: [BRUTAL-FPS.dmg](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0-x64.dmg)
 2. **Open**: Double-click the .dmg file
-3. **Install**: Drag BRUTAL-FPS to Applications folder
+3. **Install**: Open the DMG and drag BRUTAL-FPS to Applications folder
 4. **Launch**: Open from Applications or Launchpad
 
 ### Linux Users
@@ -133,14 +133,14 @@ sudo dpkg -i BRUTAL-FPS-1.0.0.deb
 
 **Steps:**
 
-1. **Download DMG**
-   - File: `BRUTAL-FPS-1.0.0.dmg`
-   - Universal binary (Intel + Apple Silicon)
+1. **Download the right DMG**
+   - File: `BRUTAL-FPS-1.0.0-x64.dmg` (Intel Macs)
+   - File: `BRUTAL-FPS-1.0.0-arm64.dmg` (Apple Silicon M1/M2/M3+)
 
 2. **Open DMG**
    ```bash
    # Or double-click in Finder
-   open BRUTAL-FPS-1.0.0.dmg
+   open BRUTAL-FPS-1.0.0-x64.dmg   # or -arm64.dmg on Apple Silicon
    ```
 
 3. **Drag to Applications**
@@ -347,7 +347,7 @@ npm run electron:dev
 ```bash
 # Or use the one-click scripts:
 ./build-linux.sh    # Linux AppImage + .deb
-./build-mac.sh      # macOS universal DMG
+./build-mac.sh      # macOS DMGs (Intel + Apple Silicon)
 build-exe.bat       # Windows installer + portable
 
 # Build for current platform
@@ -403,7 +403,7 @@ xattr -rd com.apple.quarantine /Applications/BRUTAL-FPS.app
 ```
 
 **Problem:** Not optimized for M1/M2
-**Solution:** The universal binary supports both Intel and Apple Silicon natively.
+**Solution:** Download the right DMG: `BRUTAL-FPS-1.0.0-x64.dmg` for Intel, `BRUTAL-FPS-1.0.0-arm64.dmg` for Apple Silicon.
 
 ### Linux Issues
 

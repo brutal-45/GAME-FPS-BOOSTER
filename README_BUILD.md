@@ -138,7 +138,9 @@ Output: `release/BRUTAL-FPS-Setup-1.0.0.exe`
 ```bash
 npm run electron:mac
 ```
-Output: `release/BRUTAL-FPS-1.0.0.dmg`
+Output:
+- `release/BRUTAL-FPS-1.0.0-x64.dmg` (Intel)
+- `release/BRUTAL-FPS-1.0.0-arm64.dmg` (Apple Silicon)
 
 **Linux:**
 ```bash
@@ -176,7 +178,8 @@ release/
 ### macOS Builds
 ```
 release/
-└── BRUTAL-FPS-1.0.0.dmg            # DMG installer
+├── BRUTAL-FPS-1.0.0-x64.dmg         # Intel Macs
+└── BRUTAL-FPS-1.0.0-arm64.dmg       # Apple Silicon (M1/M2/M3)
 ```
 
 ### Linux Builds

@@ -35,7 +35,7 @@ echo "[*] Installing dependencies..."
 $RUNNER install
 
 echo ""
-echo "[*] Building macOS DMG (universal)..."
+echo "[*] Building macOS DMGs (Intel x64 + Apple Silicon arm64)..."
 $RUNNER run electron:mac
 
 echo ""
