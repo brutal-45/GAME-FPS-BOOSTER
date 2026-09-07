@@ -358,7 +358,8 @@ Choose your platform and download the installer:
 |:--------:|:--------------|:----------|
 | **Windows** | [📥 Download Installer](INSTALLATION.md#windows-installation) | `.exe` Setup |
 | **Windows Portable** | [📥 Download Portable](INSTALLATION.md#windows-portable) | `.exe` No Install |
-| **macOS** | [📥 Download for Mac](INSTALLATION.md#macos-installation) | `.dmg` Universal |
+| **macOS (Intel)** | [📥 Download for Mac](INSTALLATION.md#macos-installation) | `BRUTAL-FPS-1.0.0-x64.dmg` |
+| **macOS (Apple Silicon)** | [📥 Download for Mac](INSTALLATION.md#macos-installation) | `BRUTAL-FPS-1.0.0-arm64.dmg` |
 | **Linux** | [📥 Download AppImage](INSTALLATION.md#linux-installation) | `.AppImage` |
 | **Linux (Debian)** | [📥 Download .deb](INSTALLATION.md#linux-debian) | `.deb` Package |
 | **Web Preview** | [🌐 View in Browser](https://brutal-fps.vercel.app) | Online Demo |
