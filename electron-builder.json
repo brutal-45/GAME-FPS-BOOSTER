@@ -1,51 +1,51 @@
-{ 
+{
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
   "appId": "com.brutal-tools.brutal-fps",
-  "productName": "BRUTAL-FPS", 
+  "productName": "BRUTAL-FPS",
   "copyright": "Copyright © 2024 Brutal Tools",
-  
   "directories": {
     "output": "release",
     "buildResources": "build"
   },
-  
   "files": [
     "electron/**/*",
     "public/**/*",
     "package.json",
     "!node_modules/**/*"
   ],
-  
   "extraResources": [
     {
       "from": "build",
       "to": "assets",
-      "filter": ["icon.*"]
+      "filter": [
+        "icon.*"
+      ]
     },
     {
       "from": "public/brutal-fps-standalone.html",
       "to": "app/index.html"
     }
   ],
-
   "npmRebuild": false,
   "buildDependenciesFromSource": false,
-  
   "win": {
     "target": [
       {
         "target": "nsis",
-        "arch": ["x64"]
+        "arch": [
+          "x64"
+        ]
       },
       {
         "target": "portable",
-        "arch": ["x64"]
+        "arch": [
+          "x64"
+        ]
       }
     ],
     "icon": "build/icon.ico",
     "artifactName": "${productName}-Setup-${version}.${ext}"
   },
-  
   "nsis": {
     "oneClick": false,
     "perMachine": false,
@@ -60,36 +60,37 @@
     "license": "LICENSE",
     "runAfterFinish": true
   },
-  
   "portable": {
     "artifactName": "${productName}-Portable-${version}.exe"
   },
-  
   "mac": {
     "target": [
       {
         "target": "dmg",
-        "arch": ["x64", "arm64"]
+        "arch": [
+          "x64",
+          "arm64"
+        ]
       }
     ],
     "icon": "build/icon.icns",
     "category": "public.app-category.games",
-    "artifactName": "${productName}-${version}.${ext}",
-    "hardenedRuntime": true,
-    "gatekeeperAssess": false,
-    "entitlements": "build/entitlements.mac.plist",
-    "entitlementsInherit": "build/entitlements.mac.plist"
+    "artifactName": "${productName}-${version}-${arch}.${ext}",
+    "identity": null
   },
-  
   "linux": {
     "target": [
       {
         "target": "AppImage",
-        "arch": ["x64"]
+        "arch": [
+          "x64"
+        ]
       },
       {
         "target": "deb",
-        "arch": ["x64"]
+        "arch": [
+          "x64"
+        ]
       }
     ],
     "executableName": "brutal-fps",
@@ -102,6 +103,5 @@
       "Categories": "Game;Entertainment;"
     }
   },
-  
   "publish": null
 }
