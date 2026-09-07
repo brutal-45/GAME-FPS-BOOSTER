@@ -37,7 +37,7 @@ npm run electron:build:all
 
 This creates installers for:
 - ✅ Windows (.exe installer + portable)
-- ✅ macOS (.dmg)
+- ✅ macOS (x64 + arm64 .dmg)
 - ✅ Linux (.AppImage + .deb)
 
 > ⚠️ **Cross-platform note:** `.dmg` can only be built on macOS, `.exe` only on Windows,
@@ -67,7 +67,8 @@ After building, check the `release/` folder:
 |------|----------|------|
 | `BRUTAL-FPS-Setup-1.0.0.exe` | Windows | Installer |
 | `BRUTAL-FPS-Portable-1.0.0.exe` | Windows | Portable |
-| `BRUTAL-FPS-1.0.0.dmg` | macOS | DMG |
+| `BRUTAL-FPS-1.0.0-x64.dmg` | macOS Intel | DMG |
+| `BRUTAL-FPS-1.0.0-arm64.dmg` | macOS Apple Silicon | DMG |
 | `BRUTAL-FPS-1.0.0.AppImage` | Linux | AppImage |
 | `BRUTAL-FPS-1.0.0.deb` | Linux | Debian Package |
 
