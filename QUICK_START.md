@@ -40,6 +40,10 @@ This creates installers for:
 - ✅ macOS (.dmg)
 - ✅ Linux (.AppImage + .deb)
 
+> ⚠️ **Cross-platform note:** `.dmg` can only be built on macOS, `.exe` only on Windows,
+> `.AppImage`/`.deb` only on Linux. For one automatic build of **all** platforms, push a `v*`
+> tag and let the GitHub Actions workflow (`.github/workflows/build.yml`) do it.
+
 ### Individual Platform Builds
 
 ```bash
