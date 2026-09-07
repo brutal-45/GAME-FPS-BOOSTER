@@ -1,64 +1,86 @@
-name: Build Desktop App 
+name: Build & Release All Platforms
 
 on:
   push:
     tags:
       - 'v*'
   workflow_dispatch:
-    inputs:
-      version: 
-        description: 'Version to build (e.g., 1.0.0)'
-        required: false
-        default: '1.0.0'
+
+permissions:
+  contents: write
 
 jobs:
   build:
-    runs-on: windows-latest
+    name: Build (${{ matrix.name }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Windows
+            os: windows-latest
+            args: --win nsis portable --x64
+          - name: macOS
+            os: macos-latest
+            args: --mac --universal
+          - name: Linux
+            os: ubuntu-latest
+            args: --linux AppImage deb --x64
+
+    runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Bun 
-        uses: oven-sh/setup-bun@v1
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+
+      - name: Install Linux build dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk-3-0 libnotify4 libnss3 libxss1 libasound2t64 fuse
+
+      - name: Generate macOS icon (.icns)
+        if: runner.os == 'macOS'
+        run: ./build/make_icns.sh
 
       - name: Install dependencies
         run: bun install
 
-      - name: Build Next.js app
-        run: bun run build
-
-      - name: Build Electron app
-        run: bun run electron:build
+      - name: Package Electron app (${{ matrix.name }})
+        run: bun x electron-builder ${{ matrix.args }} --publish never
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: BRUTAL-FPS-Windows
-          path: |
-            release/*.exe
-            release/*.msi
+          name: BRUTAL-FPS-${{ matrix.name }}
+          path: release/*
+          if-no-files-found: error
 
   release:
+    name: Create GitHub Release
+    if: startsWith(github.ref, 'refs/tags/v')
     needs: build
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v')
 
     steps:
-      - name: Download artifacts
+      - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
-          name: BRUTAL-FPS-Windows
-          path: release/
+          path: release
+          merge-multiple: true
+
+      - name: Check downloaded files
+        run: ls -lh release/
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: release/*
           generate_release_notes: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
