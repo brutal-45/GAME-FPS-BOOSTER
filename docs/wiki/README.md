@@ -25,6 +25,19 @@ GitHub Wiki in one step.
 
 ## Alternative: push to the wiki repo (requires push access)
 
+**Recommended — one command:**
+
+```bash
+./publish-wiki.sh
+```
+
+- Clones `GAME-FPS-BOOSTER.wiki.git` directly
+- Copies all `docs/wiki/*.md` (Home, Installation, …) into it
+- Commits and pushes to `master`
+- Works in CI too (`docs/wiki-publish.yml`) with a `WIKI_PAT` secret
+
+Manual equivalent:
+
 ```bash
 git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.wiki.git
 cd GAME-FPS-BOOSTER.wiki
@@ -33,8 +46,11 @@ rm -f README.md   # wiki home is Home.md
 git add -A && git commit -m "Add BRUTAL-FPS wiki" && git push
 ```
 
-> The `.wiki.git` repository is created automatically once the wiki feature is
-> enabled and the first page is saved (or the first push is made).
+> ⚠️ **GitHub limitation:** `.wiki.git` does NOT exist until the repo owner creates
+> the first wiki page in the web UI (Wiki tab → "Create the first page" → save as
+> `Home`). Pushing before that fails with "Repository not found". A classic PAT
+> with `repo` scope (or the `WIKI_PAT` repo secret) is needed for wiki pushes —
+> the default `GITHUB_TOKEN` cannot write to wikis.
 
 ## Page list
 
