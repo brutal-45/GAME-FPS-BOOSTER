@@ -5,7 +5,7 @@
 ### Windows Users
 1. **Double-click** `build-exe.bat` to create your installer
 2. **Find** the installer in the `release/` folder
-3. **Run** `BRUTAL-FPS-Setup-1.0.0.exe`
+3. **Run** `BRUTAL-FPS-Setup-1.0.1.exe`
 4. **Enjoy!** Your FPS booster is ready
 
 ### macOS Users  
@@ -65,12 +65,12 @@ After building, check the `release/` folder:
 
 | File | Platform | Type |
 |------|----------|------|
-| `BRUTAL-FPS-Setup-1.0.0.exe` | Windows | Installer |
-| `BRUTAL-FPS-Portable-1.0.0.exe` | Windows | Portable |
-| `BRUTAL-FPS-1.0.0-x64.dmg` | macOS Intel | DMG |
-| `BRUTAL-FPS-1.0.0-arm64.dmg` | macOS Apple Silicon | DMG |
-| `BRUTAL-FPS-1.0.0.AppImage` | Linux | AppImage |
-| `BRUTAL-FPS-1.0.0.deb` | Linux | Debian Package |
+| `BRUTAL-FPS-Setup-1.0.1.exe` | Windows | Installer |
+| `BRUTAL-FPS-Portable-1.0.1.exe` | Windows | Portable |
+| `BRUTAL-FPS-1.0.1-x64.dmg` | macOS Intel | DMG |
+| `BRUTAL-FPS-1.0.1-arm64.dmg` | macOS Apple Silicon | DMG |
+| `BRUTAL-FPS-1.0.1.AppImage` | Linux | AppImage |
+| `BRUTAL-FPS-1.0.1.deb` | Linux | Debian Package |
 
 ---
 
