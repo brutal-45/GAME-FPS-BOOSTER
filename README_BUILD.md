@@ -132,23 +132,23 @@ python build/create_icons.py
 ```bash
 npm run electron:build
 ```
-Output: `release/BRUTAL-FPS-Setup-1.0.0.exe`
+Output: `release/BRUTAL-FPS-Setup-1.0.1.exe`
 
 **macOS:**
 ```bash
 npm run electron:mac
 ```
 Output:
-- `release/BRUTAL-FPS-1.0.0-x64.dmg` (Intel)
-- `release/BRUTAL-FPS-1.0.0-arm64.dmg` (Apple Silicon)
+- `release/BRUTAL-FPS-1.0.1-x64.dmg` (Intel)
+- `release/BRUTAL-FPS-1.0.1-arm64.dmg` (Apple Silicon)
 
 **Linux:**
 ```bash
 npm run electron:linux
 ```
 Output: 
-- `release/BRUTAL-FPS-1.0.0.AppImage`
-- `release/BRUTAL-FPS-1.0.0.deb`
+- `release/BRUTAL-FPS-1.0.1.AppImage`
+- `release/BRUTAL-FPS-1.0.1.deb`
 
 #### Option B: All Platforms
 
@@ -171,22 +171,22 @@ After successful build, check the `release/` folder:
 ### Windows Builds
 ```
 release/
-├── BRUTAL-FPS-Setup-1.0.0.exe      # Standard installer
-└── BRUTAL-FPS-Portable-1.0.0.exe   # Portable version
+├── BRUTAL-FPS-Setup-1.0.1.exe      # Standard installer
+└── BRUTAL-FPS-Portable-1.0.1.exe   # Portable version
 ```
 
 ### macOS Builds
 ```
 release/
-├── BRUTAL-FPS-1.0.0-x64.dmg         # Intel Macs
-└── BRUTAL-FPS-1.0.0-arm64.dmg       # Apple Silicon (M1/M2/M3)
+├── BRUTAL-FPS-1.0.1-x64.dmg         # Intel Macs
+└── BRUTAL-FPS-1.0.1-arm64.dmg       # Apple Silicon (M1/M2/M3)
 ```
 
 ### Linux Builds
 ```
 release/
-├── BRUTAL-FPS-1.0.0.AppImage  # Universal AppImage
-└── BRUTAL-FPS-1.0.0.deb        # Debian package
+├── BRUTAL-FPS-1.0.1.AppImage  # Universal AppImage
+└── BRUTAL-FPS-1.0.1.deb        # Debian package
 ```
 
 ---
