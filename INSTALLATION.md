@@ -6,7 +6,7 @@ Complete installation instructions for all platforms.
 
 > **💡 Prebuilt binaries:** The GitHub Actions workflow (`.github/workflows/build.yml`) builds
 > every installer automatically and attaches them to a GitHub Release whenever a tag like
-> `v1.0.0` is pushed. Open the **Releases** page of the repo to download the Windows `.exe`
+> `v1.0.1` is pushed. Open the **Releases** page of the repo to download the Windows `.exe`
 > (NSIS + portable), macOS `.dmg` for Intel (`-x64`) and Apple Silicon (`-arm64`), and Linux `.AppImage` + `.deb`. You can also
 > trigger the same builds manually from the **Actions** tab → "Build & Release All Platforms"
 > → **Run workflow** (this produces artifacts without creating a release).
@@ -16,13 +16,13 @@ Complete installation instructions for all platforms.
 ## 🔥 Quick Install (Recommended)
 
 ### Windows Users
-1. **Download**: [BRUTAL-FPS-Setup.exe](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-Setup-1.0.0.exe)
+1. **Download**: [BRUTAL-FPS-Setup.exe](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-Setup-1.0.1.exe)
 2. **Run**: Double-click the downloaded file
 3. **Install**: Follow the wizard (Next → Next → Finish)
 4. **Launch**: Click desktop icon or find in Start Menu
 
 ### macOS Users
-1. **Download**: [BRUTAL-FPS.dmg](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0-x64.dmg)
+1. **Download**: [BRUTAL-FPS.dmg](https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.1-x64.dmg)
 2. **Open**: Double-click the .dmg file
 3. **Install**: Open the DMG and drag BRUTAL-FPS to Applications folder
 4. **Launch**: Open from Applications or Launchpad
@@ -31,22 +31,22 @@ Complete installation instructions for all platforms.
 **Option A: AppImage (Universal)**
 ```bash
 # Download
-wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.AppImage
+wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.1.AppImage
 
 # Make executable
-chmod +x BRUTAL-FPS-1.0.0.AppImage
+chmod +x BRUTAL-FPS-1.0.1.AppImage
 
 # Run
-./BRUTAL-FPS-1.0.0.AppImage
+./BRUTAL-FPS-1.0.1.AppImage
 ```
 
 **Option B: Debian/Ubuntu Package**
 ```bash
 # Download
-wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.deb
+wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.1.deb
 
 # Install
-sudo dpkg -i BRUTAL-FPS-1.0.0.deb
+sudo dpkg -i BRUTAL-FPS-1.0.1.deb
 ```
 
 ---
@@ -64,12 +64,12 @@ sudo dpkg -i BRUTAL-FPS-1.0.0.deb
 **Steps:**
 
 1. **Download the installer**
-   - File: `BRUTAL-FPS-Setup-1.0.0.exe`
+   - File: `BRUTAL-FPS-Setup-1.0.1.exe`
    - SHA256: (Available on releases page)
 
 2. **Run the installer**
    ```
-   Double-click BRUTAL-FPS-Setup-1.0.0.exe
+   Double-click BRUTAL-FPS-Setup-1.0.1.exe
    ```
 
 3. **Accept License Agreement**
@@ -108,12 +108,12 @@ sudo dpkg -i BRUTAL-FPS-1.0.0.deb
 **Steps:**
 
 1. **Download portable version**
-   - File: `BRUTAL-FPS-Portable-1.0.0.exe`
+   - File: `BRUTAL-FPS-Portable-1.0.1.exe`
    - No installation required!
 
 2. **Run directly**
    ```
-   Double-click BRUTAL-FPS-Portable-1.0.0.exe
+   Double-click BRUTAL-FPS-Portable-1.0.1.exe
    ```
 
 3. **Use anywhere**
@@ -134,13 +134,13 @@ sudo dpkg -i BRUTAL-FPS-1.0.0.deb
 **Steps:**
 
 1. **Download the right DMG**
-   - File: `BRUTAL-FPS-1.0.0-x64.dmg` (Intel Macs)
-   - File: `BRUTAL-FPS-1.0.0-arm64.dmg` (Apple Silicon M1/M2/M3+)
+   - File: `BRUTAL-FPS-1.0.1-x64.dmg` (Intel Macs)
+   - File: `BRUTAL-FPS-1.0.1-arm64.dmg` (Apple Silicon M1/M2/M3+)
 
 2. **Open DMG**
    ```bash
    # Or double-click in Finder
-   open BRUTAL-FPS-1.0.0-x64.dmg   # or -arm64.dmg on Apple Silicon
+   open BRUTAL-FPS-1.0.1-x64.dmg   # or -arm64.dmg on Apple Silicon
    ```
 
 3. **Drag to Applications**
@@ -175,23 +175,23 @@ rm -rf /Applications/BRUTAL-FPS.app
 
 1. **Download AppImage**
    ```bash
-   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.AppImage
+   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.1.AppImage
    ```
 
 2. **Make executable**
    ```bash
-   chmod +x BRUTAL-FPS-1.0.0.AppImage
+   chmod +x BRUTAL-FPS-1.0.1.AppImage
    ```
 
 3. **Run**
    ```bash
-   ./BRUTAL-FPS-1.0.0.AppImage
+   ./BRUTAL-FPS-1.0.1.AppImage
    ```
 
 4. **Optional: Integrate with system**
    ```bash
    # Move to applications
-   mv BRUTAL-FPS-1.0.0.AppImage /opt/brutal-fps.AppImage
+   mv BRUTAL-FPS-1.0.1.AppImage /opt/brutal-fps.AppImage
 
    # Create desktop entry
    echo '[Desktop Entry]
@@ -218,12 +218,12 @@ rm -rf /Applications/BRUTAL-FPS.app
 
 1. **Download .deb package**
    ```bash
-   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.0.deb
+   wget https://github.com/brutal-45/GAME-FPS-BOOSTER/releases/latest/download/BRUTAL-FPS-1.0.1.deb
    ```
 
 2. **Install**
    ```bash
-   sudo dpkg -i BRUTAL-FPS-1.0.0.deb
+   sudo dpkg -i BRUTAL-FPS-1.0.1.deb
    ```
 
 3. **Fix dependencies (if needed)**
@@ -268,33 +268,44 @@ source ~/.bashrc
 ```bash
 git clone https://github.com/brutal-45/GAME-FPS-BOOSTER.git
 cd GAME-FPS-BOOSTER
+
+# ▶ KALI-SPECIAL PACKAGE (recommended on Kali):
+./build-kali.sh
+
+# Or the generic Linux package:
 ./build-linux.sh
 ```
 
-This creates `release/BRUTAL-FPS-1.0.0.AppImage` and `release/BRUTAL-FPS-1.0.0.deb`.
+`build-kali.sh` creates `release-kali/BRUTAL-FPS-1.0.1-kali.deb` and
+`release-kali/BRUTAL-FPS-1.0.1-kali.AppImage` — a Kali-tuned package whose dependencies use
+the Debian trixie `t64` library names (`libgtk-3-0t64`, `libasound2t64`, …) with fallbacks to
+the older names, so it installs cleanly on Kali 2024/2025+ and older Debian-based distros.
 
-**Step 3a - Install the .deb (recommended):**
+**Step 3a - Install the Kali .deb (recommended):**
 
 ```bash
-sudo dpkg -i release/BRUTAL-FPS-1.0.0.deb
+sudo dpkg -i release-kali/BRUTAL-FPS-1.0.1-kali.deb
 sudo apt-get install -f   # fix any missing dependencies
 ```
 
 Then launch from the applications menu, or run the binary directly:
 
 ```bash
-/opt/BRUTAL-FPS/brutal-fps
+brutal-fps-kali
 ```
 
-**Step 3b - Or just run the AppImage (no install):**
+**Step 3b - Or just run the Kali AppImage (no install):**
 
 ```bash
-chmod +x release/BRUTAL-FPS-1.0.0.AppImage
-./release/BRUTAL-FPS-1.0.0.AppImage
+chmod +x release-kali/BRUTAL-FPS-1.0.1-kali.AppImage
+./release-kali/BRUTAL-FPS-1.0.1-kali.AppImage
 ```
 
-If you get a FUSE error, install `fuse` (`sudo apt install -y fuse`) or run with
-`./release/BRUTAL-FPS-1.0.0.AppImage --appimage-extract-and-run`.
+If you get a FUSE error, install `fuse3` (`sudo apt install -y fuse3`) or run with
+`./release-kali/BRUTAL-FPS-1.0.1-kali.AppImage --appimage-extract-and-run`.
+
+**Step 3c - Generic packages (all Debian-based distros):** use the same steps with
+`release/BRUTAL-FPS-1.0.1.deb` / `.AppImage` from `./build-linux.sh`.
 
 ## 🔧 Build from Source
 
@@ -403,7 +414,7 @@ xattr -rd com.apple.quarantine /Applications/BRUTAL-FPS.app
 ```
 
 **Problem:** Not optimized for M1/M2
-**Solution:** Download the right DMG: `BRUTAL-FPS-1.0.0-x64.dmg` for Intel, `BRUTAL-FPS-1.0.0-arm64.dmg` for Apple Silicon.
+**Solution:** Download the right DMG: `BRUTAL-FPS-1.0.1-x64.dmg` for Intel, `BRUTAL-FPS-1.0.1-arm64.dmg` for Apple Silicon.
 
 ### Linux Issues
 
