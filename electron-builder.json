@@ -98,9 +98,11 @@
     "category": "Game",
     "artifactName": "${productName}-${version}.${ext}",
     "desktop": {
-      "Name": "BRUTAL-FPS",
-      "Comment": "Ultimate Gaming Performance Booster",
-      "Categories": "Game;Entertainment;"
+      "entry": {
+        "Name": "BRUTAL-FPS",
+        "Comment": "Ultimate Gaming Performance Booster",
+        "Categories": "Game;Entertainment;"
+      }
     }
   },
   "publish": null
