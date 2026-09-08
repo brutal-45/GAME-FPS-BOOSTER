@@ -45,7 +45,7 @@ echo  ║                    BUILD COMPLETE!                               ║
 echo  ╚══════════════════════════════════════════════════════════════════╝
 echo.
 echo  Your executable is ready in the 'release' folder:
-echo    - BRUTAL-FPS-Setup-1.0.0.exe (Installer)
-echo    - BRUTAL-FPS-Portable-1.0.0.exe (Portable)
+echo    - BRUTAL-FPS-Setup-1.0.1.exe (Installer)
+echo    - BRUTAL-FPS-Portable-1.0.1.exe (Portable)
 echo.
 pause
