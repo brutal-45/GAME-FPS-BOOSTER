@@ -49,6 +49,7 @@
     <a href="#-features"><b>🎮 Features</b></a> •
     <a href="#-download-now"><b>📥 Download</b></a> •
     <a href="INSTALLATION.md"><b>📦 Installation</b></a> •
+    <a href="https://github.com/brutal-45/GAME-FPS-BOOSTER/wiki"><b>📖 Wiki</b></a> •
     <a href="#-screenshots"><b>📸 Screenshots</b></a> •
     <a href="#-how-it-works"><b>⚙️ How It Works</b></a> •
     <a href="#-contributing"><b>🤝 Contributing</b></a> •
