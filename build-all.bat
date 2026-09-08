@@ -48,15 +48,15 @@ echo.
 echo Your installers are ready in the 'release' folder:
 echo.
 echo WINDOWS:
-echo   - BRUTAL-FPS-Setup-1.0.0.exe (Installer)
-echo   - BRUTAL-FPS-Portable-1.0.0.exe (Portable)
+echo   - BRUTAL-FPS-Setup-1.0.1.exe (Installer)
+echo   - BRUTAL-FPS-Portable-1.0.1.exe (Portable)
 echo.
 echo MACOS:
-echo   - BRUTAL-FPS-1.0.0.dmg
+echo   - BRUTAL-FPS-1.0.1.dmg
 echo.
 echo LINUX:
-echo   - BRUTAL-FPS-1.0.0.AppImage
-echo   - BRUTAL-FPS-1.0.0.deb
+echo   - BRUTAL-FPS-1.0.1.AppImage
+echo   - BRUTAL-FPS-1.0.1.deb
 echo.
 dir release\*.* 2>nul | find "File(s)"
 echo.
