@@ -1,0 +1,30 @@
+# ============================================================================
+#  BRUTAL-FPS Wiki Direct Publisher (GitHub Actions)
+#  DROP-IN: move/copy this file to  .github/workflows/wiki-publish.yml
+#           to keep the GitHub Wiki in sync on every push to master.
+#  SECRET:  add a PAT (classic, 'repo' scope) as repository secret WIKI_PAT
+#           — GITHUB_TOKEN cannot push to the wiki repo.
+# ============================================================================
+name: Publish Wiki
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish docs/wiki -> <repo>.wiki.git
+        env:
+          WIKI_PAT: ${{ secrets.WIKI_PAT }}
+        run: |
+          set -euo pipefail
+          echo "Using secret: $([ -n "${WIKI_PAT:-}" ] && echo yes || echo 'NO (add WIKI_PAT secret)')"
+          ./publish-wiki.sh
