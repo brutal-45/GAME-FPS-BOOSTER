@@ -16,7 +16,10 @@
 # ============================================================================
 set -euo pipefail
 
-cd "$(dirname "$0")"
+# Resolve the project directory BEFORE any cd, so docs/wiki/ is always found
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SRC="$SCRIPT_DIR/docs/wiki"
+cd "$SCRIPT_DIR"
 
 # --- resolve repo (owner/repo) from git remote ---
 REMOTE_URL=$(git config --get remote.origin.url || true)
@@ -61,13 +64,8 @@ fi
 cd "$WORK/wiki"
 
 # --- copy pages (Home replaces any existing Home) ---
-SRC="$(cd /home/user/ 2>/dev/null >/dev/null; echo "$PWD")/GAME-FPS-BOOSTER/docs/wiki"
-# better: resolve relative to this script
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SRC="$SCRIPT_DIR/docs/wiki"
-
 if [[ ! -d "$SRC" ]]; then
-  echo "❌ docs/wiki/ not found next to this script."; exit 1
+  echo "❌ docs/wiki/ not found at $SRC"; exit 1
 fi
 
 # keep Home/Installation/.../_Sidebar/_Footer; skip README.md (repo-only guide)
