@@ -75,7 +75,7 @@ const testimonials = [
 export default function DownloadPage() {
   const [downloading, setDownloading] = useState<string | null>(null);
   const [activeCard, setActiveCard] = useState<string | null>(null);
-  const version = "1.0.0";
+  const version = "1.0.1";
 
   const handleDownload = async (type: string) => {
     setDownloading(type);

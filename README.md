@@ -37,7 +37,7 @@
 
   <!-- Animated badges -->
   <p>
-    <img src="https://img.shields.io/badge/version-1.0.0-red?style=for-the-badge&logo=github&labelColor=000000&color=ff0000" alt="Version">
+    <img src="https://img.shields.io/badge/version-1.0.1-red?style=for-the-badge&logo=github&labelColor=000000&color=ff0000" alt="Version">
     <img src="https://img.shields.io/badge/releases-auto%20via%20CI-brightgreen?style=for-the-badge&logo=github&labelColor=000000&color=00ff00" alt="Auto Releases via CI">
     <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&labelColor=000000&color=00d4ff" alt="License">
     <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-informational?style=for-the-badge&logo=windows&labelColor=000000&color=0078d4" alt="Platform">
@@ -358,10 +358,11 @@ Choose your platform and download the installer:
 |:--------:|:--------------|:----------|
 | **Windows** | [📥 Download Installer](INSTALLATION.md#windows-installation) | `.exe` Setup |
 | **Windows Portable** | [📥 Download Portable](INSTALLATION.md#windows-portable) | `.exe` No Install |
-| **macOS (Intel)** | [📥 Download for Mac](INSTALLATION.md#macos-installation) | `BRUTAL-FPS-1.0.0-x64.dmg` |
-| **macOS (Apple Silicon)** | [📥 Download for Mac](INSTALLATION.md#macos-installation) | `BRUTAL-FPS-1.0.0-arm64.dmg` |
+| **macOS (Intel)** | [📥 Download for Mac](INSTALLATION.md#macos-installation) | `BRUTAL-FPS-1.0.1-x64.dmg` |
+| **macOS (Apple Silicon)** | [📥 Download for Mac](INSTALLATION.md#macos-installation) | `BRUTAL-FPS-1.0.1-arm64.dmg` |
 | **Linux** | [📥 Download AppImage](INSTALLATION.md#linux-installation) | `.AppImage` |
 | **Linux (Debian)** | [📥 Download .deb](INSTALLATION.md#linux-debian) | `.deb` Package |
+| **Kali Linux (special)** | [📥 Kali .deb](INSTALLATION.md#linux-kali) | `-kali.deb` Package |
 | **Web Preview** | [🌐 View in Browser](https://brutal-fps.vercel.app) | Online Demo |
 
 </div>
